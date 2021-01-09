@@ -6,7 +6,9 @@ target 'NYTimes' do
   use_frameworks!
 
   # Pods for NYTimes
-pod 'Moya/RxSwift', '~> 14.0'
+  pod 'Moya', '~> 14.0'
+  pod 'RxSwift', '6.0.0'
+  pod 'RxCocoa', '6.0.0'
 
   target 'NYTimesTests' do
     inherit! :search_paths
