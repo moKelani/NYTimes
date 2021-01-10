@@ -23,8 +23,8 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = UIColor(named: "YoyoGrayColor")
+        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.textColor = .white
         label.numberOfLines = 0
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +34,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
     let publishedDateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = UIColor(named: "YoyoGrayColor")
+        label.textColor = .white
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -42,14 +42,14 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
     
     private var baseInfoView: UIView = {
            let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(red: 53/255, green: 53/255, blue: 53/255, alpha: 1.0)
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
        }()
     
     private var articleView: UIView = {
            let view = UIView()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .clear
         view.layer.cornerRadius = 8
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -61,8 +61,8 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
-        backgroundColor = .systemGray
-        contentView.backgroundColor = UIColor.white
+        backgroundColor = .clear
+        contentView.backgroundColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1.0)
         setUpUI()
     }
     

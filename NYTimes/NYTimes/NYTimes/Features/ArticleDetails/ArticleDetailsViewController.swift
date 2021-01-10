@@ -18,7 +18,7 @@ class ArticleDetailsViewController: UIViewController {
 
     lazy var coverImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "image_placeholder_icon"))
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.backgroundColor = .clear
         imageView.isUserInteractionEnabled = true
@@ -28,8 +28,8 @@ class ArticleDetailsViewController: UIViewController {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = UIColor(named: "YoyoGrayColor")
+        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.textColor = .white
         label.numberOfLines = 0
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -38,8 +38,8 @@ class ArticleDetailsViewController: UIViewController {
     
     let publishedDateLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = UIColor(named: "YoyoGrayColor")
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .white
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -47,17 +47,14 @@ class ArticleDetailsViewController: UIViewController {
     
     private var baseInfoView: UIView = {
            let view = UIView()
-        view.backgroundColor = .white
-        view.layer.cornerRadius = 8
-        view.layer.masksToBounds = true
+        view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
        }()
     
     private var placeHolder: EmptyPlaceHolderView = {
         let view = EmptyPlaceHolderView(frame: .zero)
-        view.backgroundColor = .white
-        view.layer.cornerRadius = 8
+        view.backgroundColor = .clear
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
@@ -75,22 +72,25 @@ class ArticleDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
 
-        view.backgroundColor = .white
-        setupViews()
-        setupLayout()
-        setupRx()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setupRx()
-    }
 }
 
 // MARK: Setup
 private extension ArticleDetailsViewController {
 
+    
+    func setupUI() {
+        view.backgroundColor = UIColor(red: 60/255, green: 110/255, blue: 113/255, alpha: 1.0)
+        guard let comingViewModel = viewModel else {
+            setupPlaceHolder()
+            return
+        }
+        setupViews()
+        setupLayout()
+        setupRx(comingViewModel: comingViewModel)
+    }
     func setupViews() {
         showDefaultNavigationBar()
         [coverImageView, baseInfoView].forEach {
@@ -106,12 +106,11 @@ private extension ArticleDetailsViewController {
         NSLayoutConstraint.activate([
             //imageView
             coverImageView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
-            coverImageView.topAnchor.constraint(equalTo: margins.topAnchor),
+            coverImageView.topAnchor.constraint(equalTo: margins.topAnchor, constant: 16),
             
             coverImageView.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
             coverImageView.bottomAnchor.constraint(equalTo: baseInfoView.topAnchor, constant: -10),
             //title
-            //baseInfoView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             baseInfoView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
             baseInfoView.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
             baseInfoView.bottomAnchor.constraint(equalTo: margins.bottomAnchor),
@@ -127,15 +126,12 @@ private extension ArticleDetailsViewController {
         ])
     }
     
-    func setupRx() {
-        guard let comingViewModel = viewModel else {
-            setupPlaceHolder()
-            return
-        }
+    func setupRx(comingViewModel: ArticleCellViewModel) {
+        
         comingViewModel.articleCover.drive(onNext: { [weak self] url in
             guard let `self` = self, let url = url else { return }
             self.coverImageView.kf.setImage(with: url)
-            self.coverImageView.layer.cornerRadius = 5
+            self.coverImageView.layer.cornerRadius = 10
         }).disposed(by: bag)
         comingViewModel.articleTitle.drive(titleLabel.rx.text).disposed(by: bag)
         comingViewModel.articlePublishDate.drive(publishedDateLabel.rx.text).disposed(by: bag)

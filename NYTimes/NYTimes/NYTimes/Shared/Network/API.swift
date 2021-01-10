@@ -7,9 +7,6 @@
 
 import Moya
 
-
-//let NYTimesAPIProvider = MoyaProvider<API>(plugins: [NetworkLoggerPlugin(configuration: .init())])
-
 enum API {
     case popular(days: Int)
     case article(id: String)

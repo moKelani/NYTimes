@@ -46,8 +46,8 @@ class EmptyPlaceHolderView: UIView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = ""
-        label.font = UIFont.boldSystemFont(ofSize: 16.0)
-        label.textColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 20.0)
+        label.textColor = .white
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
 
@@ -58,7 +58,7 @@ class EmptyPlaceHolderView: UIView {
         let label = UILabel()
         label.text = ""
         label.font = UIFont.systemFont(ofSize: 13)
-        label.textColor = .gray
+        label.textColor = .white
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
