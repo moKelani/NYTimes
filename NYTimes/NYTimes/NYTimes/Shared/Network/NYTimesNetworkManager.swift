@@ -11,13 +11,13 @@ import RxSwift
 import Moya
 
 protocol NYNetworkable {
-    var provider: MoyaProvider<API> { get }
+    var provider: MoyaProvider<NYTime> { get }
     func getPopularArticleList() -> Single<[Article]>
 }
 
 class NYNetworkManager: NYNetworkable {
     
-    let provider: MoyaProvider<API>
+    let provider: MoyaProvider<NYTime>
     
     init() {
             func JSONResponseDataFormatter(_ data: Data) -> String {
@@ -30,7 +30,7 @@ class NYNetworkManager: NYNetworkable {
                 }
             }
 
-            provider = MoyaProvider<API>(stubClosure: MoyaProvider.delayedStub(2), plugins: [NetworkLoggerPlugin(configuration: .init(formatter: .init(responseData: JSONResponseDataFormatter),
+            provider = MoyaProvider<NYTime>(plugins: [NetworkLoggerPlugin(configuration: .init(formatter: .init(responseData: JSONResponseDataFormatter),
                                                                                                          logOptions: .verbose))])
 
         }

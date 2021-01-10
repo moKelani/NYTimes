@@ -1,0 +1,1223 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2021 The New York Times Company.  All Rights Reserved.",
+    "num_results": 20,
+    "results": [
+        {
+            "uri": "nyt://article/8c9a2227-47d5-5abe-9c7a-8cdc499cb262",
+            "url": "https://www.nytimes.com/2021/01/09/world/asia/indonesia-plane-crash.html",
+            "id": 100000007542459,
+            "asset_id": 100000007542459,
+            "source": "New York Times",
+            "published_date": "2021-01-09",
+            "updated": "2021-01-09 23:54:21",
+            "section": "World",
+            "subsection": "Asia Pacific",
+            "nytdsection": "world",
+            "adx_keywords": "Aviation Accidents, Safety and Disasters;Airlines and Airplanes;Sriwijaya Air Flight 182;Boeing Company;Sriwijaya Air;Indonesia;Jakarta (Indonesia)",
+            "column": null,
+            "byline": "By Hannah Beech and Muktita Suhartono",
+            "type": "Article",
+            "title": "Indonesian Jetliner Crashes Into the Sea After Takeoff, Carrying 62",
+            "abstract": "The Boeing 737-500, a Sriwijaya Air flight, had taken off from Jakarta, the capital. Officials said they found body parts and possibly part of the wreckage.",
+            "des_facet": [
+                "Aviation Accidents, Safety and Disasters",
+                "Airlines and Airplanes",
+                "Sriwijaya Air Flight 182"
+            ],
+            "org_facet": [
+                "Boeing Company",
+                "Sriwijaya Air"
+            ],
+            "per_facet": [],
+            "geo_facet": [
+                "Indonesia",
+                "Jakarta (Indonesia)"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Indonesian Navy crewmen on Saturday holding a piece of presumed wreckage from a Sriwijaya Air plane that crashed the night before shortly after takeoff near Jakarta, the capital.",
+                    "copyright": "Adek Berry/Agence France-Presse — Getty Images",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/02/09/world/09indonesia-plane-top01/09indonesia-plane-top01-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/02/09/world/09indonesia-plane-top01/merlin_182166921_18365940-6521-4b02-b659-45c595358c58-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/02/09/world/09indonesia-plane-top01/merlin_182166921_18365940-6521-4b02-b659-45c595358c58-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/8f331213-34c5-56fd-9bdf-88d53f57c78d",
+            "url": "https://www.nytimes.com/2021/01/08/health/US-variant-covid-false.html",
+            "id": 100000007542042,
+            "asset_id": 100000007542042,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-09 23:48:14",
+            "section": "Health",
+            "subsection": "",
+            "nytdsection": "health",
+            "adx_keywords": "Coronavirus (2019-nCoV);your-feed-healthcare;Birx, Deborah L",
+            "column": null,
+            "byline": "By Apoorva Mandavilli",
+            "type": "Article",
+            "title": "False Reports of a New ‘U.S. Variant’ Came From White House Task Force",
+            "abstract": "Reports of a highly contagious new variant, published on Friday by multiple news outlets, were based on speculative statements made by Dr. Deborah Birx.",
+            "des_facet": [
+                "Coronavirus (2019-nCoV)",
+                "your-feed-healthcare"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Birx, Deborah L"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Dr. Deborah Birx at a White House coronavirus task force briefing last year.",
+                    "copyright": "Mandel Ngan/Agence France-Presse — Getty Images",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/08virus-varientOS-3-copy/08virus-varientOS-3-copy-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/08virus-varientOS-3-copy/merlin_181591224_5f67b183-1a0b-4a17-8dcb-3bf72b781a10-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/08virus-varientOS-3-copy/merlin_181591224_5f67b183-1a0b-4a17-8dcb-3bf72b781a10-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/5aca8695-42c5-5510-b788-f298aa5f0ca2",
+            "url": "https://www.nytimes.com/2021/01/08/us/politics/trump-republican-national-committee.html",
+            "id": 100000007541159,
+            "asset_id": 100000007541159,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-09 13:50:22",
+            "section": "U.S.",
+            "subsection": "Politics",
+            "nytdsection": "u.s.",
+            "adx_keywords": "United States Politics and Government;Presidential Election of 2020;Storming of the US Capitol (Jan, 2021);McDaniel, Ronna Romney;Trump, Donald J;Republican Party;Republican National Committee",
+            "column": null,
+            "byline": "By Jonathan Martin",
+            "type": "Article",
+            "title": "In Capital, a G.O.P. Crisis. At the R.N.C. Meeting, a Trump Celebration.",
+            "abstract": "Party members at a gathering of the Republican National Committee endorsed President Trump as the man to lead the party forward, ignoring the turmoil in Washington.",
+            "des_facet": [
+                "United States Politics and Government",
+                "Presidential Election of 2020",
+                "Storming of the US Capitol (Jan, 2021)"
+            ],
+            "org_facet": [
+                "Republican Party",
+                "Republican National Committee"
+            ],
+            "per_facet": [
+                "McDaniel, Ronna Romney",
+                "Trump, Donald J"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Ronna McDaniel was re-elected as chair of the Republican National Committee despite the party’s loss of the presidency and the Senate.",
+                    "copyright": "Pete Marovich for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08rnc/08rnc-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08rnc/merlin_176138757_c4837971-892d-49a8-8b74-47f576b71950-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08rnc/merlin_176138757_c4837971-892d-49a8-8b74-47f576b71950-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/59e5806b-685b-50d0-9ae1-23cbe4e39618",
+            "url": "https://www.nytimes.com/2021/01/08/technology/parler-apple-google.html",
+            "id": 100000007542112,
+            "asset_id": 100000007542112,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-09 13:07:59",
+            "section": "Technology",
+            "subsection": "",
+            "nytdsection": "technology",
+            "adx_keywords": "Mobile Applications;Computers and the Internet;Right-Wing Extremism and Alt-Right;Social Media;Matze, John;Trump, Donald J;Apple Inc;Google Inc;Parler LLC",
+            "column": null,
+            "byline": "By Jack Nicas",
+            "type": "Article",
+            "title": "Parler Pitched Itself as Twitter Without Rules. Not Anymore, Apple and Google Said.",
+            "abstract": "Google and Apple told Parler, a social network popular with far-right conservatives, that it must better police its users if it wants a place in their app stores.",
+            "des_facet": [
+                "Mobile Applications",
+                "Computers and the Internet",
+                "Right-Wing Extremism and Alt-Right",
+                "Social Media"
+            ],
+            "org_facet": [
+                "Apple Inc",
+                "Google Inc",
+                "Parler LLC"
+            ],
+            "per_facet": [
+                "Matze, John",
+                "Trump, Donald J"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Apple threatened to remove Parler from its App Store if it did not regulate its content. ",
+                    "copyright": "Mark Lennihan/Associated Press",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/business/08APPLE2/08APPLE2-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/business/08APPLE2/merlin_180171891_5c2dbdd1-f24d-481e-b381-e90db922b19c-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/business/08APPLE2/merlin_180171891_5c2dbdd1-f24d-481e-b381-e90db922b19c-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/9707e784-5be1-5892-8d72-d41bcb65c2d8",
+            "url": "https://www.nytimes.com/2021/01/08/us/politics/democrats-trump-impeachment.html",
+            "id": 100000007541428,
+            "asset_id": 100000007541428,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-09 18:21:49",
+            "section": "U.S.",
+            "subsection": "Politics",
+            "nytdsection": "u.s.",
+            "adx_keywords": "United States Politics and Government;Storming of the US Capitol (Jan, 2021);Impeachment;Twenty-Fifth Amendment (US Constitution);Trump, Donald J;Biden, Joseph R Jr;Pelosi, Nancy;Democratic Party;Republican Party;House of Representatives;Senate;Twitter",
+            "column": null,
+            "byline": "By Nicholas Fandos, Maggie Haberman and Luke Broadwater",
+            "type": "Article",
+            "title": "Democrats Ready Impeachment Charge Against Trump for Inciting Capitol Mob",
+            "abstract": "Speaker Nancy Pelosi threatened decisive action against the president for his role in the insurrection against Congress if he refused to resign.",
+            "des_facet": [
+                "United States Politics and Government",
+                "Storming of the US Capitol (Jan, 2021)",
+                "Impeachment",
+                "Twenty-Fifth Amendment (US Constitution)"
+            ],
+            "org_facet": [
+                "Democratic Party",
+                "Republican Party",
+                "House of Representatives",
+                "Senate",
+                "Twitter"
+            ],
+            "per_facet": [
+                "Trump, Donald J",
+                "Biden, Joseph R Jr",
+                "Pelosi, Nancy"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "“If the president does not leave office imminently and willingly, the Congress will proceed with our action,” Speaker Nancy Pelosi wrote in a letter on Friday.",
+                    "copyright": "Anna Moneymaker for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-cong1/08dc-cong1-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-cong1/08dc-cong1-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-cong1/08dc-cong1-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/7895dbec-3181-58dd-8318-d0146ebf8c0a",
+            "url": "https://www.nytimes.com/2021/01/08/us/coach-fired-stacey-abrams.html",
+            "id": 100000007540272,
+            "asset_id": 100000007540272,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-08 16:57:33",
+            "section": "U.S.",
+            "subsection": "",
+            "nytdsection": "u.s.",
+            "adx_keywords": "Football (College);Colleges and Universities;Elections, Senate;Presidential Election of 2020;Coaches and Managers;Social Media;Cyberharassment;Abrams, Stacey Y;University of Tennessee-Chattanooga;Malone, Chris (Football Coach);Georgia",
+            "column": null,
+            "byline": "By Neil Vigdor",
+            "type": "Article",
+            "title": "‘Hateful’ Tweet About Stacey Abrams Costs University Football Coach His Job",
+            "abstract": "The University of Tennessee at Chattanooga said that it had parted ways with Chris Malone, an offensive line coach, over a now-deleted social media post.",
+            "des_facet": [
+                "Football (College)",
+                "Colleges and Universities",
+                "Elections, Senate",
+                "Presidential Election of 2020",
+                "Coaches and Managers",
+                "Social Media",
+                "Cyberharassment"
+            ],
+            "org_facet": [
+                "University of Tennessee-Chattanooga",
+                "Malone, Chris (Football Coach)"
+            ],
+            "per_facet": [
+                "Abrams, Stacey Y"
+            ],
+            "geo_facet": [
+                "Georgia"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An insulting tweet about Stacey Abrams cost an assistant football coach at the University of Tennessee at Chattanooga his job.",
+                    "copyright": "Brynn Anderson/Associated Press",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/multimedia/08xp-coach-fired-2/08xp-coach-fired-2-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/multimedia/08xp-coach-fired-2/merlin_179460864_0c3329f8-bb26-4e6c-b8d7-52b81af90aa3-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/multimedia/08xp-coach-fired-2/merlin_179460864_0c3329f8-bb26-4e6c-b8d7-52b81af90aa3-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/c91d29b1-db7a-5f36-aba1-f36545afe947",
+            "url": "https://www.nytimes.com/2021/01/09/magazine/trump-coup.html",
+            "id": 100000007539234,
+            "asset_id": 100000007539234,
+            "source": "New York Times",
+            "published_date": "2021-01-09",
+            "updated": "2021-01-09 23:28:29",
+            "section": "Magazine",
+            "subsection": "",
+            "nytdsection": "magazine",
+            "adx_keywords": "United States Politics and Government;Voter Fraud (Election Fraud);Storming of the US Capitol (Jan, 2021);Cruz, Ted;McConnell, Mitch;Pence, Mike;Trump, Donald J",
+            "column": null,
+            "byline": "By Timothy Snyder",
+            "type": "Article",
+            "title": "The American Abyss",
+            "abstract": "A historian of fascism and political atrocity on Trump, the mob and what comes next.",
+            "des_facet": [
+                "United States Politics and Government",
+                "Voter Fraud (Election Fraud)",
+                "Storming of the US Capitol (Jan, 2021)"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Cruz, Ted",
+                "McConnell, Mitch",
+                "Pence, Mike",
+                "Trump, Donald J"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The police forced the crowd out of the Capitol building after facing off in the Rotunda, Jan. 6, 3:40 p.m.",
+                    "copyright": "Ashley Gilbertson/VII, for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/17/magazine/17mag-power-10/17mag-power-10-thumbStandard-v2.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/17/magazine/17mag-power-10/17mag-power-10-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/17/magazine/17mag-power-10/17mag-power-10-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/aa1b7048-f0d4-5a12-a1d7-a0daf12e9886",
+            "url": "https://www.nytimes.com/2021/01/09/technology/apple-google-parler.html",
+            "id": 100000007542808,
+            "asset_id": 100000007542808,
+            "source": "New York Times",
+            "published_date": "2021-01-09",
+            "updated": "2021-01-09 23:28:25",
+            "section": "Technology",
+            "subsection": "",
+            "nytdsection": "technology",
+            "adx_keywords": "Computers and the Internet;Mobile Applications;Social Media;Censorship;Right-Wing Extremism and Alt-Right;United States Politics and Government;Rumors and Misinformation;Storming of the US Capitol (Jan, 2021);Freedom of Speech and Expression;Smartphones;Matze, John;Trump, Donald J;Apple Inc;Parler LLC;Google Inc",
+            "column": null,
+            "byline": "By Jack Nicas and Davey Alba",
+            "type": "Article",
+            "title": "Amazon, Apple and Google Cut Off Parler, an App That Drew Trump Supporters",
+            "abstract": "The companies pulled support for the “free speech” social network, all but killing the service just as many conservatives are seeking alternatives to Facebook and Twitter.",
+            "des_facet": [
+                "Computers and the Internet",
+                "Mobile Applications",
+                "Social Media",
+                "Censorship",
+                "Right-Wing Extremism and Alt-Right",
+                "United States Politics and Government",
+                "Rumors and Misinformation",
+                "Storming of the US Capitol (Jan, 2021)",
+                "Freedom of Speech and Expression",
+                "Smartphones"
+            ],
+            "org_facet": [
+                "Apple Inc",
+                "Parler LLC",
+                "Google Inc"
+            ],
+            "per_facet": [
+                "Matze, John",
+                "Trump, Donald J"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A rally by supporters of President Trump in Washington on Nov. 14 to protest the election results.",
+                    "copyright": "Kenny Holston for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/business/09parler1/09parler1-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/business/09parler1/09parler1-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/business/09parler1/09parler1-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/9603dce4-713d-5f96-a3af-11fe1b3c2204",
+            "url": "https://www.nytimes.com/2021/01/07/us/names-of-rioters-capitol.html",
+            "id": 100000007539263,
+            "asset_id": 100000007539263,
+            "source": "New York Times",
+            "published_date": "2021-01-07",
+            "updated": "2021-01-09 09:44:18",
+            "section": "U.S.",
+            "subsection": "",
+            "nytdsection": "u.s.",
+            "adx_keywords": "Storming of the US Capitol (Jan, 2021);Capitol Building (Washington, DC);Demonstrations, Protests and Riots;Right-Wing Extremism and Alt-Right;QAnon;Vandalism;Conspiracy Theories;United States Politics and Government;Trump, Donald J;Proud Boys;United States Capitol Police",
+            "column": null,
+            "byline": "By Sabrina Tavernise and Matthew Rosenberg",
+            "type": "Article",
+            "title": "These Are the Rioters Who Stormed the Nation’s Capitol",
+            "abstract": "The mob that rampaged the halls of Congress included infamous white supremacists and conspiracy theorists.",
+            "des_facet": [
+                "Storming of the US Capitol (Jan, 2021)",
+                "Capitol Building (Washington, DC)",
+                "Demonstrations, Protests and Riots",
+                "Right-Wing Extremism and Alt-Right",
+                "QAnon",
+                "Vandalism",
+                "Conspiracy Theories",
+                "United States Politics and Government"
+            ],
+            "org_facet": [
+                "Proud Boys",
+                "United States Capitol Police"
+            ],
+            "per_facet": [
+                "Trump, Donald J"
+            ],
+            "geo_facet": [],
+            "media": [],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/f5e38582-cb7e-5eea-ade4-3424861eec6c",
+            "url": "https://www.nytimes.com/2021/01/07/us/politics/capitol-lockdown.html",
+            "id": 100000007539700,
+            "asset_id": 100000007539700,
+            "source": "New York Times",
+            "published_date": "2021-01-07",
+            "updated": "2021-01-09 13:00:12",
+            "section": "U.S.",
+            "subsection": "Politics",
+            "nytdsection": "u.s.",
+            "adx_keywords": "Storming of the US Capitol (Jan, 2021);United States Politics and Government;News and News Media;House of Representatives;Senate;New York Times",
+            "column": null,
+            "byline": "By Nicholas Fandos, Erin Schaff and Emily Cochrane",
+            "type": "Article",
+            "title": "‘Senate Being Locked Down’: Inside a Harrowing Day at the Capitol",
+            "abstract": "Three New York Times journalists were at the Capitol when it was breached. Here’s how they experienced it.",
+            "des_facet": [
+                "Storming of the US Capitol (Jan, 2021)",
+                "United States Politics and Government",
+                "News and News Media"
+            ],
+            "org_facet": [
+                "House of Representatives",
+                "Senate",
+                "New York Times"
+            ],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Inside the House chamber, lawmakers, staff aides and journalists were told that tear gas had been deployed and to grab an emergency hood from under his or her chair.",
+                    "copyright": "Andrew Harnik/Associated Press",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/07/us/politics/07dc-capitol/07dc-capitol-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/07/us/politics/07dc-capitol/07dc-capitol-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/07/us/politics/07dc-capitol/07dc-capitol-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/ded6455e-af25-517e-b472-0a595c19e8cd",
+            "url": "https://www.nytimes.com/2021/01/09/us/politics/capitol-police.html",
+            "id": 100000007542722,
+            "asset_id": 100000007542722,
+            "source": "New York Times",
+            "published_date": "2021-01-09",
+            "updated": "2021-01-09 15:50:37",
+            "section": "U.S.",
+            "subsection": "Politics",
+            "nytdsection": "u.s.",
+            "adx_keywords": "",
+            "column": null,
+            "byline": "By Neil MacFarquhar",
+            "type": "Article",
+            "title": "Police officers who traveled to Washington are being investigated for connection to the Capitol melee.",
+            "abstract": "Officials are investigating whether the off-duty officers played a role in the Capitol siege.",
+            "des_facet": [],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Officials are investigating whether off-duty police officers played a role in the Capitol siege on Wednesday.",
+                    "copyright": "Stephanie Keith/Reuters",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/business/09transition-briefing-police-capitol-01/merlin_182149179_7654ef6c-8b59-465c-a49c-53d87658e140-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/business/09transition-briefing-police-capitol-01/merlin_182149179_7654ef6c-8b59-465c-a49c-53d87658e140-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/business/09transition-briefing-police-capitol-01/merlin_182149179_7654ef6c-8b59-465c-a49c-53d87658e140-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/cee5e27e-37d4-5ccf-b0fe-8363d078643c",
+            "url": "https://www.nytimes.com/2021/01/09/opinion/sunday/trump-capitol-attack.html",
+            "id": 100000007541652,
+            "asset_id": 100000007541652,
+            "source": "New York Times",
+            "published_date": "2021-01-09",
+            "updated": "2021-01-09 21:08:48",
+            "section": "Opinion",
+            "subsection": "Sunday Review",
+            "nytdsection": "opinion",
+            "adx_keywords": "Storming of the US Capitol (Jan, 2021);United States Politics and Government;Capitol Building (Washington, DC);Trump, Donald J;Dowd, Michael Joseph;Washington (DC)",
+            "column": null,
+            "byline": "By Maureen Dowd",
+            "type": "Article",
+            "title": "Trump’s Capitol Offense",
+            "abstract": "The presidency melts down, as Trump becomes too vile even for Twitter.",
+            "des_facet": [
+                "Storming of the US Capitol (Jan, 2021)",
+                "United States Politics and Government",
+                "Capitol Building (Washington, DC)"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Trump, Donald J",
+                "Dowd, Michael Joseph"
+            ],
+            "geo_facet": [
+                "Washington (DC)"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Michael Reynolds/EPA, via Shutterstock",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/10/opinion/09dowd-02/09dowd-02-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/10/opinion/09dowd-02/merlin_182110374_f806eb8e-bccf-4ea7-847f-f3961e2b9589-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/10/opinion/09dowd-02/merlin_182110374_f806eb8e-bccf-4ea7-847f-f3961e2b9589-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/b1133c95-e94d-529f-a312-55e8e597a0cf",
+            "url": "https://www.nytimes.com/2021/01/08/us/politics/trump-pelosi-nuclear-military.html",
+            "id": 100000007541337,
+            "asset_id": 100000007541337,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-09 00:56:22",
+            "section": "U.S.",
+            "subsection": "Politics",
+            "nytdsection": "u.s.",
+            "adx_keywords": "War and Emergency Powers (US);Nuclear Weapons;United States Defense and Military Forces;Twenty-Fifth Amendment (US Constitution);Impeachment;Presidents and Presidency (US);Storming of the US Capitol (Jan, 2021);United States Politics and Government;Pelosi, Nancy;Trump, Donald J;Milley, Mark A;Defense Department;Joint Chiefs of Staff",
+            "column": null,
+            "byline": "By David E. Sanger and Eric Schmitt",
+            "type": "Article",
+            "title": "Pelosi Pressed Pentagon on Safeguards to Prevent Trump From Ordering Military Action",
+            "abstract": "But short of the cabinet invoking the 25th Amendment or impeaching and convicting the president, it would be unconstitutional to defy legal orders from the commander in chief, experts note.",
+            "des_facet": [
+                "War and Emergency Powers (US)",
+                "Nuclear Weapons",
+                "United States Defense and Military Forces",
+                "Twenty-Fifth Amendment (US Constitution)",
+                "Impeachment",
+                "Presidents and Presidency (US)",
+                "Storming of the US Capitol (Jan, 2021)",
+                "United States Politics and Government"
+            ],
+            "org_facet": [
+                "Defense Department",
+                "Joint Chiefs of Staff"
+            ],
+            "per_facet": [
+                "Pelosi, Nancy",
+                "Trump, Donald J",
+                "Milley, Mark A"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Speaker Nancy Pelosi said she had spoken with Gen. Mark A. Milley, the chairman of the Joint Chiefs of Staff, about whether it was possible to keep “an unhinged president” from using the nuclear launch codes.",
+                    "copyright": "Anna Moneymaker for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-nukes/merlin_182119884_eca8e2b9-861b-4ae9-838f-bc6bcd1b96a2-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-nukes/merlin_182119884_eca8e2b9-861b-4ae9-838f-bc6bcd1b96a2-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-nukes/merlin_182119884_eca8e2b9-861b-4ae9-838f-bc6bcd1b96a2-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/1649fec4-482c-50e4-9655-6cea2a137add",
+            "url": "https://www.nytimes.com/2021/01/09/us/politics/adam-johnson-arrested-pelosi-lectern.html",
+            "id": 100000007542563,
+            "asset_id": 100000007542563,
+            "source": "New York Times",
+            "published_date": "2021-01-09",
+            "updated": "2021-01-09 16:07:32",
+            "section": "U.S.",
+            "subsection": "Politics",
+            "nytdsection": "u.s.",
+            "adx_keywords": "",
+            "column": null,
+            "byline": "By Will Wright",
+            "type": "Article",
+            "title": "Viral Capitol mob figures arrested and charged for involvement in the siege.",
+            "abstract": "Authorities also arrested a well-known conspiracy theorist who entered the Capitol shirtless, wearing a fur headdress with horns.",
+            "des_facet": [],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Adam Johnson was arrested on Friday for participating in the breach of the U.S. Capitol Building on Wednesday.",
+                    "copyright": "Win Mcnamee/Getty Images",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/us/09transition-briefing-Florida-arrest/09transition-briefing-Florida-arrest-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/us/09transition-briefing-Florida-arrest/09transition-briefing-Florida-arrest-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/us/09transition-briefing-Florida-arrest/09transition-briefing-Florida-arrest-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/4b41eb7b-6bf1-59af-81e3-3bb8b440ddb4",
+            "url": "https://www.nytimes.com/2021/01/08/us/mary-miller-hitler-remarks-controversy.html",
+            "id": 100000007541285,
+            "asset_id": 100000007541285,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-09 15:54:22",
+            "section": "U.S.",
+            "subsection": "",
+            "nytdsection": "u.s.",
+            "adx_keywords": "United States Politics and Government;Apologies;Demonstrations, Protests and Riots;Holocaust and the Nazi Era;Miller, Mary E (1959- );Hitler, Adolf;House of Representatives;Illinois",
+            "column": null,
+            "byline": "By Michael Levenson",
+            "type": "Article",
+            "title": "Congresswoman Apologizes for Making an Approving Reference to Hitler",
+            "abstract": "Representative Mary Miller, an Illinois Republican, had faced condemnation and calls to resign for declaring at a rally: “Hitler was right on one thing: He said, ‘Whoever has the youth, has the future.’”",
+            "des_facet": [
+                "United States Politics and Government",
+                "Apologies",
+                "Demonstrations, Protests and Riots",
+                "Holocaust and the Nazi Era"
+            ],
+            "org_facet": [
+                "House of Representatives"
+            ],
+            "per_facet": [
+                "Miller, Mary E (1959- )",
+                "Hitler, Adolf"
+            ],
+            "geo_facet": [
+                "Illinois"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Representative Mary Miller was elected in November and sworn in to office on Sunday.",
+                    "copyright": "Anna Moneymaker for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/lens/08xp-miller-photo/08xp-miller-photo-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/lens/08xp-miller-photo/08xp-miller-photo-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/lens/08xp-miller-photo/08xp-miller-photo-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/26286336-7333-53db-9fcd-81deb3f54a7b",
+            "url": "https://www.nytimes.com/2021/01/08/business/sperm-donors-facebook-groups.html",
+            "id": 100000007253863,
+            "asset_id": 100000007253863,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-09 19:06:52",
+            "section": "Business",
+            "subsection": "",
+            "nytdsection": "business",
+            "adx_keywords": "Sperm;Shortages;Artificial Insemination;In Vitro Fertilization;Social Media;Women and Girls;Genetics and Heredity;Pregnancy and Childbirth;Quarantine (Life and Culture);California Cryobank;Facebook Inc;Seattle Sperm Bank",
+            "column": null,
+            "byline": "By Nellie Bowles",
+            "type": "Article",
+            "title": "The Sperm Kings Have a Problem: Too Much Demand",
+            "abstract": "Many people want a pandemic baby, but some sperm banks are running low. So women are joining unregulated Facebook groups to find willing donors, no middleman required.",
+            "des_facet": [
+                "Sperm",
+                "Shortages",
+                "Artificial Insemination",
+                "In Vitro Fertilization",
+                "Social Media",
+                "Women and Girls",
+                "Genetics and Heredity",
+                "Pregnancy and Childbirth",
+                "Quarantine (Life and Culture)"
+            ],
+            "org_facet": [
+                "California Cryobank",
+                "Facebook Inc",
+                "Seattle Sperm Bank"
+            ],
+            "per_facet": [],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Alvaro Dominguez",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/10/business/10Spermworld-illo/10Spermworld-illo-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/10/business/10Spermworld-illo/10Spermworld-illo-mediumThreeByTwo210-v2.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/10/business/10Spermworld-illo/10Spermworld-illo-mediumThreeByTwo440-v2.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/826d0bc2-e498-5e8f-a305-feeee5179907",
+            "url": "https://www.nytimes.com/2021/01/08/us/politics/impeachment-president-trump-capitol.html",
+            "id": 100000007540794,
+            "asset_id": 100000007540794,
+            "source": "New York Times",
+            "published_date": "2021-01-08",
+            "updated": "2021-01-09 14:23:38",
+            "section": "U.S.",
+            "subsection": "Politics",
+            "nytdsection": "u.s.",
+            "adx_keywords": "United States Politics and Government;Constitution (US);Storming of the US Capitol (Jan, 2021);Impeachment;Trump, Donald J",
+            "column": null,
+            "byline": "By Nicholas Fandos",
+            "type": "Article",
+            "title": "How to Impeach a President in 12 Days: Here’s What It Would Take",
+            "abstract": "The storming of the Capitol has prompted a fresh drive by Democrats to impeach President Trump, who egged on the insurrection, for a second time. But there are less than two weeks left in his term.",
+            "des_facet": [
+                "United States Politics and Government",
+                "Constitution (US)",
+                "Storming of the US Capitol (Jan, 2021)",
+                "Impeachment"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Trump, Donald J"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The House voted to impeach President Trump in December 2019.",
+                    "copyright": "Erin Schaff/The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-impeach/merlin_166159365_1c53c98c-50d0-453e-8a49-54b9fe518007-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-impeach/merlin_166159365_1c53c98c-50d0-453e-8a49-54b9fe518007-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/us/politics/08dc-impeach/merlin_166159365_1c53c98c-50d0-453e-8a49-54b9fe518007-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/b61969f0-826d-5cb5-b52d-c072aa998658",
+            "url": "https://www.nytimes.com/2021/01/07/arts/television/alex-trebek-jeopardy-johnny-gilbert.html",
+            "id": 100000007538513,
+            "asset_id": 100000007538513,
+            "source": "New York Times",
+            "published_date": "2021-01-07",
+            "updated": "2021-01-08 00:41:46",
+            "section": "Arts",
+            "subsection": "Television",
+            "nytdsection": "arts",
+            "adx_keywords": "Television;Content Type: Personal Profile;Gilbert, Johnny (TV Announcer);Trebek, Alex;Jennings, Ken",
+            "column": null,
+            "byline": "By Julia Jacobs",
+            "type": "Article",
+            "title": "On Alex Trebek’s Final ‘Jeopardy!,’ a Last Introduction From a Friend",
+            "abstract": "Johnny Gilbert, 92, started on the game show with Trebek in 1984. Now, he must imagine a ‘Jeopardy!’ without his longtime colleague.",
+            "des_facet": [
+                "Television",
+                "Content Type: Personal Profile"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Gilbert, Johnny (TV Announcer)",
+                "Trebek, Alex",
+                "Jennings, Ken"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "“I have never thought of anyone as host of the show except Alex,” said Johnny Gilbert, who had been with the show for as long as Alex Trebek. He’ll have to adjust to introducing new hosts.",
+                    "copyright": "Jeopardy! Productions",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/arts/07jeopardy-02/07jeopardy-02-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/arts/07jeopardy-02/07jeopardy-02-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/08/arts/07jeopardy-02/07jeopardy-02-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/917bded5-09d8-517d-8689-ae1d74a66220",
+            "url": "https://www.nytimes.com/2021/01/07/style/capitol-riot-tactics.html",
+            "id": 100000007536509,
+            "asset_id": 100000007536509,
+            "source": "New York Times",
+            "published_date": "2021-01-07",
+            "updated": "2021-01-09 23:56:47",
+            "section": "Style",
+            "subsection": "",
+            "nytdsection": "style",
+            "adx_keywords": "United States Politics and Government;Fashion and Apparel;Demonstrations, Protests and Riots;your-feed-fashion;Trump, Donald J;Washington (DC)",
+            "column": null,
+            "byline": "By Vanessa Friedman",
+            "type": "Article",
+            "title": "Why Rioters Wear Costumes",
+            "abstract": "As star-spangled superheroes and militiamen, the rioters of D.C. dressed with a license for mayhem.",
+            "des_facet": [
+                "United States Politics and Government",
+                "Fashion and Apparel",
+                "Demonstrations, Protests and Riots",
+                "your-feed-fashion"
+            ],
+            "org_facet": [],
+            "per_facet": [
+                "Trump, Donald J"
+            ],
+            "geo_facet": [
+                "Washington (DC)"
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "People converged earlier in the day on the National Mall for President Trump to speak.",
+                    "copyright": "Jason Andrew for The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/06/fashion/06DC-STREETS-eagle/06DC-STREETS-eagle-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/06/fashion/06DC-STREETS-eagle/06DC-STREETS-eagle-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/06/fashion/06DC-STREETS-eagle/06DC-STREETS-eagle-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        },
+        {
+            "uri": "nyt://article/534935fa-9e5c-5bfb-a629-6cb7ca66d2ad",
+            "url": "https://www.nytimes.com/2021/01/09/us/politics/capitol-riot-charges.html",
+            "id": 100000007542747,
+            "asset_id": 100000007542747,
+            "source": "New York Times",
+            "published_date": "2021-01-09",
+            "updated": "2021-01-09 23:54:32",
+            "section": "U.S.",
+            "subsection": "Politics",
+            "nytdsection": "u.s.",
+            "adx_keywords": "Storming of the US Capitol (Jan, 2021);Fringe Groups and Movements;Demonstrations, Protests and Riots;Social Media;Barnett, Richard (1960- );Pelosi, Nancy;Trump, Donald J;House of Representatives;Senate;Justice Department;United States Marshals Service",
+            "column": null,
+            "byline": "By Will Wright",
+            "type": "Article",
+            "title": "Trump Loyalists Arrested and Charged With Involvement in Capitol Siege",
+            "abstract": "A well-known conspiracy theorist who entered the Capitol shirtless, wearing a fur headdress with horns, was among those arrested.",
+            "des_facet": [
+                "Storming of the US Capitol (Jan, 2021)",
+                "Fringe Groups and Movements",
+                "Demonstrations, Protests and Riots",
+                "Social Media"
+            ],
+            "org_facet": [
+                "House of Representatives",
+                "Senate",
+                "Justice Department",
+                "United States Marshals Service"
+            ],
+            "per_facet": [
+                "Barnett, Richard (1960- )",
+                "Pelosi, Nancy",
+                "Trump, Donald J"
+            ],
+            "geo_facet": [],
+            "media": [
+                {
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Jake Angeli was charged on Saturday in connection with the siege on the Capitol. The authorities said that he had carried a spear, about six feet long, with an American flag affixed just below the blade.",
+                    "copyright": "Erin Schaff/The New York Times",
+                    "approved_for_syndication": 1,
+                    "media-metadata": [
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/us/politics/09dc-arrests-1/09dc-arrests-1-thumbStandard.jpg",
+                            "format": "Standard Thumbnail",
+                            "height": 75,
+                            "width": 75
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/us/politics/09dc-arrests-1/09dc-arrests-1-mediumThreeByTwo210.jpg",
+                            "format": "mediumThreeByTwo210",
+                            "height": 140,
+                            "width": 210
+                        },
+                        {
+                            "url": "https://static01.nyt.com/images/2021/01/09/us/politics/09dc-arrests-1/09dc-arrests-1-mediumThreeByTwo440.jpg",
+                            "format": "mediumThreeByTwo440",
+                            "height": 293,
+                            "width": 440
+                        }
+                    ]
+                }
+            ],
+            "eta_id": 0
+        }
+    ]
+}

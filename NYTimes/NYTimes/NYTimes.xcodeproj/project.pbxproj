@@ -27,7 +27,9 @@
 		460DDDB725AA870200B67DA6 /* EmptyPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460DDDB625AA870200B67DA6 /* EmptyPlaceHolderView.swift */; };
 		460DDDC225AA8CE300B67DA6 /* UITableView+EmptyPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460DDDC125AA8CE300B67DA6 /* UITableView+EmptyPlaceHolder.swift */; };
 		460DDDE425AAB0EC00B67DA6 /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460DDDE325AAB0EC00B67DA6 /* UIViewController+NavigationBar.swift */; };
-		463E6D3B25A92A2500CCB19E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463E6D3A25A92A2500CCB19E /* API.swift */; };
+		460DDDE925AABE6500B67DA6 /* FileManage+Exist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460DDDE825AABE6500B67DA6 /* FileManage+Exist.swift */; };
+		460DDE1E25AAC5DE00B67DA6 /* NYTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460DDE1D25AAC5DE00B67DA6 /* NYTimeService.swift */; };
+		463E6D3B25A92A2500CCB19E /* NYTimeTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463E6D3A25A92A2500CCB19E /* NYTimeTargetType.swift */; };
 		46848E8425A93ED900FCCC21 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46848E8325A93ED900FCCC21 /* Reachability.swift */; };
 		46848E9025A9453E00FCCC21 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46848E8F25A9453E00FCCC21 /* Article.swift */; };
 		46848E9B25A9463600FCCC21 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46848E9725A9463500FCCC21 /* Media.swift */; };
@@ -35,8 +37,6 @@
 		46848E9D25A9463600FCCC21 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46848E9925A9463600FCCC21 /* Metadata.swift */; };
 		469B326425A8C39A00E6075B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B326325A8C39A00E6075B /* AppDelegate.swift */; };
 		469B326625A8C39A00E6075B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B326525A8C39A00E6075B /* SceneDelegate.swift */; };
-		469B326825A8C39A00E6075B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B326725A8C39A00E6075B /* ViewController.swift */; };
-		469B326B25A8C39A00E6075B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469B326925A8C39A00E6075B /* Main.storyboard */; };
 		469B326D25A8C39B00E6075B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469B326C25A8C39B00E6075B /* Assets.xcassets */; };
 		469B327025A8C39B00E6075B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469B326E25A8C39B00E6075B /* LaunchScreen.storyboard */; };
 		469B327B25A8C39C00E6075B /* NYTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B327A25A8C39C00E6075B /* NYTimesTests.swift */; };
@@ -84,7 +84,10 @@
 		460DDDB625AA870200B67DA6 /* EmptyPlaceHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPlaceHolderView.swift; sourceTree = "<group>"; };
 		460DDDC125AA8CE300B67DA6 /* UITableView+EmptyPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyPlaceHolder.swift"; sourceTree = "<group>"; };
 		460DDDE325AAB0EC00B67DA6 /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
-		463E6D3A25A92A2500CCB19E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		460DDDE825AABE6500B67DA6 /* FileManage+Exist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManage+Exist.swift"; sourceTree = "<group>"; };
+		460DDE1125AAC45100B67DA6 /* ArticlesList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ArticlesList.json; sourceTree = "<group>"; };
+		460DDE1D25AAC5DE00B67DA6 /* NYTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeService.swift; sourceTree = "<group>"; };
+		463E6D3A25A92A2500CCB19E /* NYTimeTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeTargetType.swift; sourceTree = "<group>"; };
 		46848E8325A93ED900FCCC21 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		46848E8F25A9453E00FCCC21 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		46848E9725A9463500FCCC21 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
@@ -93,8 +96,6 @@
 		469B326025A8C39A00E6075B /* NYTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469B326325A8C39A00E6075B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469B326525A8C39A00E6075B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		469B326725A8C39A00E6075B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		469B326A25A8C39A00E6075B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		469B326C25A8C39B00E6075B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		469B326F25A8C39B00E6075B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		469B327125A8C39B00E6075B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,10 +182,18 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		460DDE1025AAC43100B67DA6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				460DDE1125AAC45100B67DA6 /* ArticlesList.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		463E6D3925A92A1500CCB19E /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				463E6D3A25A92A2500CCB19E /* API.swift */,
+				463E6D3A25A92A2500CCB19E /* NYTimeTargetType.swift */,
 				46F43DBA25A956CF006D9079 /* NYTimesNetworkManager.swift */,
 			);
 			path = Network;
@@ -199,6 +208,7 @@
 				460DDDB625AA870200B67DA6 /* EmptyPlaceHolderView.swift */,
 				460DDDC125AA8CE300B67DA6 /* UITableView+EmptyPlaceHolder.swift */,
 				460DDDE325AAB0EC00B67DA6 /* UIViewController+NavigationBar.swift */,
+				460DDDE825AABE6500B67DA6 /* FileManage+Exist.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -243,8 +253,6 @@
 				469B329B25A8CF9700E6075B /* Shared */,
 				469B329A25A8CF8F00E6075B /* Features */,
 				469B329925A8CF8600E6075B /* App */,
-				469B326725A8C39A00E6075B /* ViewController.swift */,
-				469B326925A8C39A00E6075B /* Main.storyboard */,
 				469B326C25A8C39B00E6075B /* Assets.xcassets */,
 				469B326E25A8C39B00E6075B /* LaunchScreen.storyboard */,
 				469B327125A8C39B00E6075B /* Info.plist */,
@@ -257,6 +265,7 @@
 			children = (
 				469B327A25A8C39C00E6075B /* NYTimesTests.swift */,
 				469B327C25A8C39C00E6075B /* Info.plist */,
+				460DDE1D25AAC5DE00B67DA6 /* NYTimeService.swift */,
 			);
 			path = NYTimesTests;
 			sourceTree = "<group>";
@@ -292,6 +301,7 @@
 		469B329B25A8CF9700E6075B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				460DDE1025AAC43100B67DA6 /* Mocks */,
 				460DDD4D25AA30C700B67DA6 /* Protocols */,
 				46848E8E25A9452F00FCCC21 /* Models */,
 				46848E8225A93EC300FCCC21 /* Extensions */,
@@ -433,7 +443,6 @@
 			files = (
 				469B327025A8C39B00E6075B /* LaunchScreen.storyboard in Resources */,
 				469B326D25A8C39B00E6075B /* Assets.xcassets in Resources */,
-				469B326B25A8C39A00E6075B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,10 +572,10 @@
 			files = (
 				46848E9B25A9463600FCCC21 /* Media.swift in Sources */,
 				4606881025A9237A00FDBF37 /* ArticleMasterDetailsViewController.swift in Sources */,
+				460DDDE925AABE6500B67DA6 /* FileManage+Exist.swift in Sources */,
 				460DDDB225AA86E400B67DA6 /* NotificationName.swift in Sources */,
 				46848E9025A9453E00FCCC21 /* Article.swift in Sources */,
 				460DDD4925AA305600B67DA6 /* ArticleTableViewCell.swift in Sources */,
-				469B326825A8C39A00E6075B /* ViewController.swift in Sources */,
 				460DDDAD25AA863300B67DA6 /* AlertMessage.swift in Sources */,
 				460DDDB725AA870200B67DA6 /* EmptyPlaceHolderView.swift in Sources */,
 				460687EB25A920CE00FDBF37 /* ArticleDetailsViewController.swift in Sources */,
@@ -584,7 +593,7 @@
 				460DDDE425AAB0EC00B67DA6 /* UIViewController+NavigationBar.swift in Sources */,
 				460687D325A91E8500FDBF37 /* ArticleListRouter.swift in Sources */,
 				46F43DBB25A956CF006D9079 /* NYTimesNetworkManager.swift in Sources */,
-				463E6D3B25A92A2500CCB19E /* API.swift in Sources */,
+				463E6D3B25A92A2500CCB19E /* NYTimeTargetType.swift in Sources */,
 				460DDD4F25AA30DF00B67DA6 /* CellReusable.swift in Sources */,
 				46848E9D25A9463600FCCC21 /* Metadata.swift in Sources */,
 				460687D625A91E8500FDBF37 /* ArticleListViewModel.swift in Sources */,
@@ -596,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460DDE1E25AAC5DE00B67DA6 /* NYTimeService.swift in Sources */,
 				469B327B25A8C39C00E6075B /* NYTimesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,14 +634,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		469B326925A8C39A00E6075B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				469B326A25A8C39A00E6075B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		469B326E25A8C39B00E6075B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -56,14 +56,16 @@ class ArticleListViewModel {
             return
         }
         let networkManager: NYNetworkManager = NYNetworkManager()
-        let observable = networkManager.provider.rx.request(.popular(days: 7)).map(PopularResult.self, using: JSONDecoder(), failsOnEmptyData: false).asObservable()
+        let observable = networkManager.provider.rx.request(.popular(days: 7)).map(PopularResult.self, using: JSONDecoder(), failsOnEmptyData: true).asObservable()
         isLoading.accept(true)
-        _ = observable.subscribe(onNext: { [weak self] articles in
+        _ = observable.subscribe(onNext: { [weak self] response in
             self?.isLoading.accept(false)
-            guard let `self` = self else { return }
+            guard let `self` = self, let articles = response.results else { return }
             var newArray = self.articleDataSource.value
-            newArray.append(contentsOf: (articles.results?.map { ArticleCellViewModel(article: $0) })!)
+            newArray.append(contentsOf: articles.map { ArticleCellViewModel(article: $0) })
             self.articleDataSource.accept(newArray)
+        }, onError: { (error) in
+            self.alertMessage.onNext(AlertMessage(title: "No Data Coming", message: "Something Went wrong"))
         })
     }
     
