@@ -12,7 +12,7 @@ import Kingfisher
 class ArticleTableViewCell: UITableViewCell, CellReusable {
 
     lazy var coverImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "image_placeholder_icon"))
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.backgroundColor = .clear
@@ -84,7 +84,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
     func bind(viewModel: ArticleCellViewModel) {
         viewModel.articleCover.drive(onNext: { [weak self] url in
             guard let `self` = self, let url = url else { return }
-            self.coverImageView.kf.setImage(with: url)
+            self.coverImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholder"))
             self.coverImageView.layer.cornerRadius = 5
         }).disposed(by: bag)
         viewModel.articleTitle.drive(titleLabel.rx.text).disposed(by: bag)

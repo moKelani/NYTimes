@@ -17,7 +17,7 @@ class ArticleDetailsViewController: UIViewController {
     fileprivate let disposeBag = DisposeBag()
 
     lazy var coverImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "image_placeholder_icon"))
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.backgroundColor = .clear
@@ -130,7 +130,7 @@ private extension ArticleDetailsViewController {
         
         comingViewModel.articleCover.drive(onNext: { [weak self] url in
             guard let `self` = self, let url = url else { return }
-            self.coverImageView.kf.setImage(with: url)
+            self.coverImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholder"))
             self.coverImageView.layer.cornerRadius = 10
         }).disposed(by: bag)
         comingViewModel.articleTitle.drive(titleLabel.rx.text).disposed(by: bag)
