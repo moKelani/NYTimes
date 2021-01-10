@@ -91,7 +91,6 @@
 		460DDE1D25AAC5DE00B67DA6 /* NYTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeService.swift; sourceTree = "<group>"; };
 		460DDE2A25AAD19800B67DA6 /* NYTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeViewModel.swift; sourceTree = "<group>"; };
 		460DDE2F25AAD1FB00B67DA6 /* APIServiceMocksUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMocksUp.swift; sourceTree = "<group>"; };
-		460DDE3425AADB3200B67DA6 /* Article.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Article.json; sourceTree = "<group>"; };
 		463E6D3A25A92A2500CCB19E /* NYTimeTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeTargetType.swift; sourceTree = "<group>"; };
 		46848E8325A93ED900FCCC21 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		46848E8F25A9453E00FCCC21 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -191,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				460DDE1125AAC45100B67DA6 /* ArticlesList.json */,
-				460DDE3425AADB3200B67DA6 /* Article.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";

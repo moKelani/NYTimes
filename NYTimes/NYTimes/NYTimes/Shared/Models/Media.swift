@@ -11,7 +11,7 @@ struct Media : Codable {
 	let subtype : String?
 	let caption : String?
 	let copyright : String?
-	let approved_for_syndication : Int?
+	let approvedForSyndication : Int?
 	let metadata : [Metadata]?
 
 	enum CodingKeys: String, CodingKey {
@@ -20,7 +20,7 @@ struct Media : Codable {
 		case subtype = "subtype"
 		case caption = "caption"
 		case copyright = "copyright"
-		case approved_for_syndication = "approved_for_syndication"
+		case approvedForSyndication = "approved_for_syndication"
 		case metadata = "media-metadata"
 	}
 
@@ -30,7 +30,7 @@ struct Media : Codable {
 		subtype = try values.decodeIfPresent(String.self, forKey: .subtype)
 		caption = try values.decodeIfPresent(String.self, forKey: .caption)
 		copyright = try values.decodeIfPresent(String.self, forKey: .copyright)
-		approved_for_syndication = try values.decodeIfPresent(Int.self, forKey: .approved_for_syndication)
+        approvedForSyndication = try values.decodeIfPresent(Int.self, forKey: .approvedForSyndication)
         metadata = try values.decodeIfPresent([Metadata].self, forKey: .metadata)
 	}
 

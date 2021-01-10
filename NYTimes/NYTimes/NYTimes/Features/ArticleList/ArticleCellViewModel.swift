@@ -41,7 +41,7 @@ extension ArticleCellViewModel {
 
     public var articlePublishDate: Driver<String> {
         return articleDriver.map {
-            return "\($0.published_date ?? "")"
+            return "\($0.publishedDate ?? "")"
         }.asDriver()
     }
 
