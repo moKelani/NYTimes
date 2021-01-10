@@ -40,8 +40,7 @@ extension KFImage {
     /// - Returns: A `KFImage` for future configuration or embedding to a `SwiftUI.View`.
     public static func source(
         _ source: Source?, isLoaded: Binding<Bool> = .constant(false)
-    ) -> KFImage
-    {
+    ) -> KFImage {
         KFImage(source: source, isLoaded: isLoaded)
     }
 
@@ -54,8 +53,7 @@ extension KFImage {
     /// - Returns: A `KFImage` for future configuration or embedding to a `SwiftUI.View`.
     public static func resource(
         _ resource: Resource?, isLoaded: Binding<Bool> = .constant(false)
-    ) -> KFImage
-    {
+    ) -> KFImage {
         .source(resource?.convertToSource(), isLoaded: isLoaded)
     }
 
@@ -70,8 +68,7 @@ extension KFImage {
     /// - Returns: A `KFImage` for future configuration or embedding to a `SwiftUI.View`.
     public static func url(
         _ url: URL?, cacheKey: String? = nil, isLoaded: Binding<Bool> = .constant(false)
-    ) -> KFImage
-    {
+    ) -> KFImage {
         source(url?.convertToSource(), isLoaded: isLoaded)
     }
 
@@ -84,8 +81,7 @@ extension KFImage {
     /// - Returns: A `KFImage` for future configuration or embedding to a `SwiftUI.View`.
     public static func dataProvider(
         _ provider: ImageDataProvider, isLoaded: Binding<Bool> = .constant(false)
-    ) -> KFImage
-    {
+    ) -> KFImage {
         source(.provider(provider), isLoaded: isLoaded)
     }
 
@@ -99,8 +95,7 @@ extension KFImage {
     /// - Returns: A `KFImage` for future configuration or embedding to a `SwiftUI.View`.
     public static func data(
         _ data: Data, cacheKey: String, isLoaded: Binding<Bool> = .constant(false)
-    ) -> KFImage
-    {
+    ) -> KFImage {
         source(.provider(RawImageDataProvider(data: data, cacheKey: cacheKey)), isLoaded: isLoaded)
     }
 }

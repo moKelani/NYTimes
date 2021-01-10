@@ -13,20 +13,17 @@ import Moya
 
 class APIServiceMocksUp: NYNetworkable {
     var provider: MoyaProvider<NYTime>
-    
+
     var fetchPopularArticlesIsCalled = false
-    
-    init(provider: MoyaProvider<NYTime> = MoyaProvider<NYTime>() )  {
+
+    init(provider: MoyaProvider<NYTime> = MoyaProvider<NYTime>() ) {
         self.provider = provider
     }
-   
+
     func getPopularArticleList() -> Single<PopularResult> {
         provider = MoyaProvider<NYTime>()
         fetchPopularArticlesIsCalled = true
         return provider.rx.request(.popular(days: 7)).filterSuccessfulStatusAndRedirectCodes().map(PopularResult.self)
     }
-    
-
-   
 
 }

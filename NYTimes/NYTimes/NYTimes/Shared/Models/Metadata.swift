@@ -6,11 +6,11 @@
 //
 
 import Foundation
-struct Metadata : Codable {
-	let url : String?
-	let format : String?
-	let height : Int?
-	let width : Int?
+struct Metadata: Codable {
+	let url: String?
+	let format: String?
+	let height: Int?
+	let width: Int?
 
 	enum CodingKeys: String, CodingKey {
 

@@ -107,7 +107,7 @@ open class ImageDownloader {
     // MARK: Public Properties
     /// The duration before the downloading is timeout. Default is 15 seconds.
     open var downloadTimeout: TimeInterval = 15.0
-    
+
     /// A set of trusted hosts when receiving server trust challenges. A challenge with host name contained in this
     /// set will be ignored. You can use this set to specify the self-signed site. It only will be used if you don't
     /// specify the `authenticationChallengeResponder`.
@@ -115,7 +115,7 @@ open class ImageDownloader {
     /// If `authenticationChallengeResponder` is set, this property will be ignored and the implementation of
     /// `authenticationChallengeResponder` will be used instead.
     open var trustedHosts: Set<String>?
-    
+
     /// Use this to set supply a configuration for the downloader. By default,
     /// NSURLSessionConfiguration.ephemeralSessionConfiguration() will be used.
     ///
@@ -127,19 +127,19 @@ open class ImageDownloader {
             session = URLSession(configuration: sessionConfiguration, delegate: sessionDelegate, delegateQueue: nil)
         }
     }
-    
+
     /// Whether the download requests should use pipeline or not. Default is false.
     open var requestsUsePipelining = false
 
     /// Delegate of this `ImageDownloader` object. See `ImageDownloaderDelegate` protocol for more.
     open weak var delegate: ImageDownloaderDelegate?
-    
+
     /// A responder for authentication challenge. 
     /// Downloader will forward the received authentication challenge for the downloading session to this responder.
     open weak var authenticationChallengeResponder: AuthenticationChallengeResponsable?
 
     private let name: String
-    private let sessionDelegate: SessionDelegate
+    private weak var sessionDelegate: SessionDelegate
     private var session: URLSession
 
     // MARK: Initializers
@@ -200,7 +200,7 @@ open class ImageDownloader {
         return completionHandler.map { block -> Delegate<DownloadResult, Void> in
 
             let delegate =  Delegate<Result<ImageLoadingResult, KingfisherError>, Void>()
-            delegate.delegate(on: self) { (self, callback) in
+            delegate.delegate(on: self) { (_, callback) in
                 block(callback)
             }
             return delegate
@@ -210,8 +210,7 @@ open class ImageDownloader {
     private func createTaskCallback(
         _ completionHandler: ((DownloadResult) -> Void)?,
         options: KingfisherParsedOptionsInfo
-    ) -> SessionDataTask.TaskCallback
-    {
+    ) -> SessionDataTask.TaskCallback {
         return SessionDataTask.TaskCallback(
             onCompleted: createCompletionCallBack(completionHandler),
             options: options
@@ -222,8 +221,7 @@ open class ImageDownloader {
         with url: URL,
         options: KingfisherParsedOptionsInfo,
         done: @escaping ((Result<DownloadingContext, KingfisherError>) -> Void)
-    )
-    {
+    ) {
         func checkRequestAndDone(r: URLRequest) {
 
             // There is a possibility that request modifier changed the url to `nil` or empty.
@@ -239,7 +237,7 @@ open class ImageDownloader {
         // Creates default request.
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: downloadTimeout)
         request.httpShouldUsePipelining = requestsUsePipelining
-        if #available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *) , options.lowDataModeSource != nil {
+        if #available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *), options.lowDataModeSource != nil {
             request.allowsConstrainedNetworkAccess = false
         }
 
@@ -260,8 +258,7 @@ open class ImageDownloader {
     private func addDownloadTask(
         context: DownloadingContext,
         callback: SessionDataTask.TaskCallback
-    ) -> DownloadTask
-    {
+    ) -> DownloadTask {
         // Ready to start download. Add it to session task manager (`sessionHandler`)
         let downloadTask: DownloadTask
         if let existingTask = sessionDelegate.task(for: context.url) {
@@ -273,7 +270,6 @@ open class ImageDownloader {
         }
         return downloadTask
     }
-
 
     private func reportWillDownloadImage(url: URL, request: URLRequest) {
         delegate?.imageDownloader(self, willDownloadImageForURL: url, with: request)
@@ -297,8 +293,7 @@ open class ImageDownloader {
 
     private func reportDidProcessImage(
         result: Result<KFCrossPlatformImage, KingfisherError>, url: URL, response: URLResponse?
-    )
-    {
+    ) {
         if let image = try? result.get() {
             self.delegate?.imageDownloader(self, didDownload: image, for: url, with: response)
         }
@@ -308,8 +303,7 @@ open class ImageDownloader {
     private func startDownloadTask(
         context: DownloadingContext,
         callback: SessionDataTask.TaskCallback
-    ) -> DownloadTask
-    {
+    ) -> DownloadTask {
 
         let downloadTask = addDownloadTask(context: context, callback: callback)
 
@@ -372,8 +366,7 @@ open class ImageDownloader {
     open func downloadImage(
         with url: URL,
         options: KingfisherParsedOptionsInfo,
-        completionHandler: ((Result<ImageLoadingResult, KingfisherError>) -> Void)? = nil) -> DownloadTask?
-    {
+        completionHandler: ((Result<ImageLoadingResult, KingfisherError>) -> Void)? = nil) -> DownloadTask? {
         var downloadTask: DownloadTask?
         createDownloadContext(with: url, options: options) { result in
             switch result {
@@ -414,8 +407,7 @@ open class ImageDownloader {
         with url: URL,
         options: KingfisherOptionsInfo? = nil,
         progressBlock: DownloadProgressBlock? = nil,
-        completionHandler: ((Result<ImageLoadingResult, KingfisherError>) -> Void)? = nil) -> DownloadTask?
-    {
+        completionHandler: ((Result<ImageLoadingResult, KingfisherError>) -> Void)? = nil) -> DownloadTask? {
         var info = KingfisherParsedOptionsInfo(options)
         if let block = progressBlock {
             info.onDataReceived = (info.onDataReceived ?? []) + [ImageLoadingProgressSideEffect(block)]
@@ -438,8 +430,7 @@ open class ImageDownloader {
     open func downloadImage(
         with url: URL,
         options: KingfisherOptionsInfo? = nil,
-        completionHandler: ((Result<ImageLoadingResult, KingfisherError>) -> Void)? = nil) -> DownloadTask?
-    {
+        completionHandler: ((Result<ImageLoadingResult, KingfisherError>) -> Void)? = nil) -> DownloadTask? {
         downloadImage(
             with: url,
             options: KingfisherParsedOptionsInfo(options),

@@ -5,8 +5,6 @@
 //  Created by Mohamed Kelany on 09/01/2021.
 //
 
-
-
 import RxSwift
 import Moya
 
@@ -16,9 +14,9 @@ protocol NYNetworkable {
 }
 
 class NYNetworkManager: NYNetworkable {
-    
+
     let provider: MoyaProvider<NYTime>
-    
+
     init() {
             func JSONResponseDataFormatter(_ data: Data) -> String {
                 do {
@@ -35,14 +33,11 @@ class NYNetworkManager: NYNetworkable {
 
         }
 
-
     func getPopularArticleList() -> Single<PopularResult> {
         return provider.rx
             .request(.popular(days: 1))
             .filterSuccessfulStatusAndRedirectCodes()
             .map(PopularResult.self)
     }
-    
-   
-    
+
 }

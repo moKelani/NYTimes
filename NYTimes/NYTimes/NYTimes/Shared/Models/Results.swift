@@ -6,29 +6,29 @@
 //
 
 import Foundation
-struct Article : Codable {
-	let uri : String?
-	let url : String?
-	let id : Int?
-	let assetId : Int?
-	let source : String?
-	let publishedDate : String?
-	let updated : String?
-	let section : String?
-	let subsection : String?
-	let nytdsection : String?
-	let adxKeywordswords : String?
-	let column : String?
-	let byline : String?
-	let type : String?
-	let title : String?
-	let abstract : String?
-	let desFacet : [String]?
-	let orgFacet : [String]?
-	let perFacet : [String]?
-	let geoFacet : [String]?
-	let media : [Media]?
-	let etaId : Int?
+struct Article: Codable {
+	let uri: String?
+	let url: String?
+	let id: Int?
+	let assetId: Int?
+	let source: String?
+	let publishedDate: String?
+	let updated: String?
+	let section: String?
+	let subsection: String?
+	let nytdsection: String?
+	let adxKeywordswords: String?
+	let column: String?
+	let byline: String?
+	let type: String?
+	let title: String?
+	let abstract: String?
+	let desFacet: [String]?
+	let orgFacet: [String]?
+	let perFacet: [String]?
+	let geoFacet: [String]?
+	let media: [Media]?
+	let etaId: Int?
 
 	enum CodingKeys: String, CodingKey {
 

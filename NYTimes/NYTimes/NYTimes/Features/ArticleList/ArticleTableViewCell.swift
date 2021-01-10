@@ -13,7 +13,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
 
     // MARK: - Properties
     private var bag: DisposeBag = DisposeBag()
-    
+
     // MARK: - UIControls
     lazy var coverImageView: UIImageView = {
         let imageView = UIImageView()
@@ -24,7 +24,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-    
+
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 14)
@@ -34,7 +34,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     lazy var publishedDateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
@@ -43,14 +43,14 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     lazy var baseInfoView: UIView = {
            let view = UIView()
         view.backgroundColor = UIColor(red: 53/255, green: 53/255, blue: 53/255, alpha: 1.0)
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
        }()
-    
+
     lazy var articleView: UIView = {
            let view = UIView()
         view.backgroundColor = .clear
@@ -60,7 +60,6 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
            return view
        }()
 
-   
     // MARK: - Intializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -69,22 +68,22 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         contentView.backgroundColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1.0)
         setUpUI()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         coverImageView.kf.cancelDownloadTask()
         coverImageView.image = nil
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         bag = DisposeBag()
     }
-    
+
     // MARK: bind
     func bind(viewModel: ArticleCellViewModel) {
         viewModel.articleCover.drive(onNext: { [weak self] url in
@@ -112,14 +111,14 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         NSLayoutConstraint.activate([
             articleView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             articleView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-            
+
             articleView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             articleView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),
-        
+
             //imageView
             coverImageView.leadingAnchor.constraint(equalTo: articleView.leadingAnchor),
             coverImageView.topAnchor.constraint(equalTo: articleView.topAnchor),
-            
+
             coverImageView.trailingAnchor.constraint(equalTo: articleView.trailingAnchor),
             coverImageView.bottomAnchor.constraint(equalTo: articleView.bottomAnchor),
             //title
@@ -131,13 +130,13 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
             titleLabel.leadingAnchor.constraint(equalTo: baseInfoView.leadingAnchor, constant: 8),
             titleLabel.trailingAnchor.constraint(equalTo: baseInfoView.trailingAnchor, constant: -4),
             titleLabel.bottomAnchor.constraint(equalTo: publishedDateLabel.topAnchor, constant: -4),
-            
+
             publishedDateLabel.leadingAnchor.constraint(equalTo: baseInfoView.leadingAnchor, constant: 8),
-            
+
             publishedDateLabel.bottomAnchor.constraint(equalTo: baseInfoView.bottomAnchor, constant: -8),
             publishedDateLabel.trailingAnchor.constraint(equalTo: baseInfoView.trailingAnchor, constant: -8),
             coverImageView.heightAnchor.constraint(equalToConstant: 140)
-            
+
         ])
     }
 

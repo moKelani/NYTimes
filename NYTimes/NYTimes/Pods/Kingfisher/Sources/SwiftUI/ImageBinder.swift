@@ -42,9 +42,9 @@ extension KFImage {
 
         var loadingOrSucceeded: Bool = false
 
-        let onFailureDelegate = Delegate<KingfisherError, Void>()
-        let onSuccessDelegate = Delegate<RetrieveImageResult, Void>()
-        let onProgressDelegate = Delegate<(Int64, Int64), Void>()
+        weak var onFailureDelegate = Delegate<KingfisherError, Void>()
+        weak var onSuccessDelegate = Delegate<RetrieveImageResult, Void>()
+        weak var onProgressDelegate = Delegate<(Int64, Int64), Void>()
 
         var isLoaded: Binding<Bool>
 

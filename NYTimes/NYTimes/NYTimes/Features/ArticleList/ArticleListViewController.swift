@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class ArticleListViewController: UIViewController {
-    
+
     // MARK: - Properties
     fileprivate var viewModel: ArticleListViewModel
     fileprivate let router: ArticleListRouter
@@ -73,7 +73,7 @@ private extension ArticleListViewController {
             guard let `self` = self else { return }
             self.tableView.reloadData()
         }).disposed(by: disposeBag)
-        
+
         viewModel.onLoading
             .map { [weak self] isLoading in
 
@@ -89,9 +89,9 @@ private extension ArticleListViewController {
             }
             .subscribe()
             .disposed(by: disposeBag)
-        
+
         viewModel.onAlertMessage.map {  [weak self] alert in
-            
+
             guard let self = self else {
                 return
             }
@@ -111,14 +111,14 @@ extension ArticleListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.dataSource.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ArticleTableViewCell = tableView.dequeueReusableCell(withIdentifier: ArticleTableViewCell.identifier) as! ArticleTableViewCell
         let cellViewModel = viewModel.dataSource[indexPath.row]
         cell.bind(viewModel: cellViewModel)
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         router.gotoArticleDetails(viewModel: viewModel.dataSource[indexPath.row])
     }

@@ -14,7 +14,7 @@ import Moya
 class NYTimeService: XCTestCase {
 
     var sut: MoyaProvider<NYTime>!
-    
+
     func localEndPoint(_ target: NYTime) -> Endpoint {
         return Endpoint(url: URL(target: target).absoluteString,
                         sampleResponseClosure: { .networkResponse(200, target.sampleData) },
@@ -22,7 +22,7 @@ class NYTimeService: XCTestCase {
                         task: target.task,
                         httpHeaderFields: target.headers)
     }
-    
+
     func getArticleList() {
         sut = MoyaProvider<NYTime>(endpointClosure: localEndPoint, stubClosure: MoyaProvider.delayedStub(2))
         sut.request(.popular(days: 7)) { (result) in
@@ -30,18 +30,16 @@ class NYTimeService: XCTestCase {
                 if response.statusCode == 200 {
                     XCTAssert(true)
                 }
-                
+
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
-                let _ = try? decoder.decode(PopularResult.self, from: response.data)
+                _ = try? decoder.decode(PopularResult.self, from: response.data)
                 XCTAssert(true)
-               
+
             } else {
                 XCTAssert(false)
             }
         }
     }
-    
-    
 
 }

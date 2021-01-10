@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class ArticleDetailsViewController: UIViewController {
-    
+
     // MARK: - Properties
     internal var viewModel: ArticleCellViewModel!
     private var disposeBag = DisposeBag()
@@ -26,7 +26,7 @@ class ArticleDetailsViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-    
+
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
@@ -36,7 +36,7 @@ class ArticleDetailsViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     lazy var publishedDateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
@@ -45,14 +45,14 @@ class ArticleDetailsViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     lazy var baseInfoView: UIView = {
            let view = UIView()
         view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
        }()
-    
+
     lazy var placeHolder: EmptyPlaceHolderView = {
         let view = EmptyPlaceHolderView(frame: .zero)
         view.backgroundColor = .clear
@@ -81,7 +81,6 @@ class ArticleDetailsViewController: UIViewController {
 // MARK: Setup
 private extension ArticleDetailsViewController {
 
-    
     func setupUI() {
         view.backgroundColor = UIColor(red: 60/255, green: 110/255, blue: 113/255, alpha: 1.0)
         guard let comingViewModel = viewModel else {
@@ -109,7 +108,7 @@ private extension ArticleDetailsViewController {
             //imageView
             coverImageView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
             coverImageView.topAnchor.constraint(equalTo: margins.topAnchor, constant: 16),
-            
+
             coverImageView.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
             coverImageView.bottomAnchor.constraint(equalTo: baseInfoView.topAnchor, constant: -10),
             //title
@@ -120,16 +119,16 @@ private extension ArticleDetailsViewController {
             titleLabel.leadingAnchor.constraint(equalTo: baseInfoView.leadingAnchor, constant: 8),
             titleLabel.trailingAnchor.constraint(equalTo: baseInfoView.trailingAnchor, constant: -4),
             titleLabel.bottomAnchor.constraint(equalTo: publishedDateLabel.topAnchor, constant: -4),
-            
+
             publishedDateLabel.leadingAnchor.constraint(equalTo: baseInfoView.leadingAnchor, constant: 8),
             publishedDateLabel.trailingAnchor.constraint(equalTo: baseInfoView.trailingAnchor, constant: -8),
             coverImageView.heightAnchor.constraint(equalToConstant: view.bounds.height*0.4)
-            
+
         ])
     }
-    
+
     func setupRx(comingViewModel: ArticleCellViewModel) {
-        
+
         comingViewModel.articleCover.drive(onNext: { [weak self] url in
             guard let `self` = self, let url = url else { return }
             self.coverImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholder"))
@@ -138,7 +137,7 @@ private extension ArticleDetailsViewController {
         comingViewModel.articleTitle.drive(titleLabel.rx.text).disposed(by: disposeBag)
         comingViewModel.articlePublishDate.drive(publishedDateLabel.rx.text).disposed(by: disposeBag)
     }
-    
+
     func setupPlaceHolder() {
         view.addSubview(placeHolder)
         NSLayoutConstraint.activate([
@@ -148,4 +147,3 @@ private extension ArticleDetailsViewController {
         placeHolder.emptyPlaceHolderType = .alert(AlertMessage(title: "Welcome To Our App", message: "Select your Item"))
     }
 }
-

@@ -168,8 +168,7 @@ extension KFImage {
 
     public func resizable(
         capInsets: EdgeInsets = EdgeInsets(),
-        resizingMode: Image.ResizingMode = .stretch) -> KFImage
-    {
+        resizingMode: Image.ResizingMode = .stretch) -> KFImage {
         configure { $0.resizable(capInsets: capInsets, resizingMode: resizingMode) }
     }
 
@@ -188,7 +187,7 @@ extension KFImage {
 
 #if DEBUG
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-struct KFImage_Previews : PreviewProvider {
+struct KFImage_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             KFImage(URL(string: "https://raw.githubusercontent.com/onevcat/Kingfisher/master/images/logo.png")!)

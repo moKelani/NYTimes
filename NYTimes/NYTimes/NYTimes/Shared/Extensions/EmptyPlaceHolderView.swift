@@ -14,7 +14,7 @@ enum EmptyPlaceHolderType {
 
 class EmptyPlaceHolderView: UIView {
 
-    var emptyPlaceHolderType: EmptyPlaceHolderType = .error  {
+    var emptyPlaceHolderType: EmptyPlaceHolderType = .error {
         didSet {
             switch emptyPlaceHolderType {
             case .alert(let alert):
@@ -24,11 +24,11 @@ class EmptyPlaceHolderView: UIView {
                 titleLabel.text = ""
                 detailsLabel.text = "Something Went Wrong"
             }
-            
+
         }
     }
     static func handleErrorPlaceHolderType(alertMessage: AlertMessage) {
-        
+
     }
 
     private lazy var contentStackView: UIStackView = {
@@ -89,4 +89,3 @@ class EmptyPlaceHolderView: UIView {
         ])
     }
 }
-

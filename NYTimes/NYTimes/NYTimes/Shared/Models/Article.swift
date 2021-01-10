@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct PopularResult : Codable {
-    let status : String?
-    let copyright : String?
-    let numResults : Int?
-    let results : [Article]?
+struct PopularResult: Codable {
+    let status: String?
+    let copyright: String?
+    let numResults: Int?
+    let results: [Article]?
 
     enum CodingKeys: String, CodingKey {
 

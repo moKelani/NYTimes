@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class ArticleMasterDetailsViewController: UISplitViewController {
-    
+
     // MARK: - Intializers
     init() {
         super.init(nibName: nil, bundle: nil)

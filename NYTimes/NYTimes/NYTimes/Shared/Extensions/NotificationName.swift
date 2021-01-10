@@ -23,4 +23,3 @@ enum Notifications: String, NotificationName {
     case sortByTapped
     case searchTapped
 }
-

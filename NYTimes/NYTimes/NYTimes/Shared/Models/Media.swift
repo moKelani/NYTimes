@@ -6,13 +6,13 @@
 //
 
 import Foundation
-struct Media : Codable {
-	let type : String?
-	let subtype : String?
-	let caption : String?
-	let copyright : String?
-	let approvedForSyndication : Int?
-	let metadata : [Metadata]?
+struct Media: Codable {
+	let type: String?
+	let subtype: String?
+	let caption: String?
+	let copyright: String?
+	let approvedForSyndication: Int?
+	let metadata: [Metadata]?
 
 	enum CodingKeys: String, CodingKey {
 
