@@ -1072,7 +1072,7 @@ public class DataRequest: Request {
 
     /// Protected storage for the `Data` read by the instance.
     @Protected
-    private var mutableData: Data?
+    private var mutableData: Data? = nil
 
     /// Creates a `DataRequest` using the provided parameters.
     ///
@@ -1478,7 +1478,8 @@ public class DownloadRequest: Request {
     /// - Returns: The `Destination` closure.
     public class func suggestedDownloadDestination(for directory: FileManager.SearchPathDirectory = .documentDirectory,
                                                    in domain: FileManager.SearchPathDomainMask = .userDomainMask,
-                                                   options: Options = []) -> Destination { { temporaryURL, response in
+                                                   options: Options = []) -> Destination {
+        { temporaryURL, response in
             let directoryURLs = FileManager.default.urls(for: directory, in: domain)
             let url = directoryURLs.first?.appendingPathComponent(response.suggestedFilename!) ?? temporaryURL
 

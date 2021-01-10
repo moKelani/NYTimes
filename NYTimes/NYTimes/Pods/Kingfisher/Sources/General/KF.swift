@@ -90,6 +90,7 @@ public enum KF {
     }
 }
 
+
 extension KF {
 
     /// A builder class to configure an image retrieving task and set it to a holder view or component.
@@ -104,15 +105,16 @@ extension KF {
 
         public var options = KingfisherParsedOptionsInfo(KingfisherManager.shared.defaultOptions)
 
-        public weak var onFailureDelegate = Delegate<KingfisherError, Void>()
-        public weak var onSuccessDelegate = Delegate<RetrieveImageResult, Void>()
-        public weak var onProgressDelegate = Delegate<(Int64, Int64), Void>()
+        public let onFailureDelegate = Delegate<KingfisherError, Void>()
+        public let onSuccessDelegate = Delegate<RetrieveImageResult, Void>()
+        public let onProgressDelegate = Delegate<(Int64, Int64), Void>()
 
         init(source: Source) {
             self.source = source
         }
 
-        private var resultHandler: ((Result<RetrieveImageResult, KingfisherError>) -> Void)? { {
+        private var resultHandler: ((Result<RetrieveImageResult, KingfisherError>) -> Void)? {
+            {
                 switch $0 {
                 case .success(let result):
                     self.onSuccessDelegate(result)
@@ -122,7 +124,8 @@ extension KF {
             }
         }
 
-        private var progressBlock: DownloadProgressBlock { { self.onProgressDelegate(($0, $1)) }
+        private var progressBlock: DownloadProgressBlock {
+            { self.onProgressDelegate(($0, $1)) }
         }
     }
 }
