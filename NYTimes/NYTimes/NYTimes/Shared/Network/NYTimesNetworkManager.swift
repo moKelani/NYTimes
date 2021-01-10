@@ -12,7 +12,7 @@ import Moya
 
 protocol NYNetworkable {
     var provider: MoyaProvider<NYTime> { get }
-    func getPopularArticleList() -> Single<[Article]>
+    func getPopularArticleList() -> Single<PopularResult>
 }
 
 class NYNetworkManager: NYNetworkable {
@@ -36,11 +36,11 @@ class NYNetworkManager: NYNetworkable {
         }
 
 
-    func getPopularArticleList() -> Single<[Article]> {
+    func getPopularArticleList() -> Single<PopularResult> {
         return provider.rx
             .request(.popular(days: 1))
             .filterSuccessfulStatusAndRedirectCodes()
-            .map([Article].self)
+            .map(PopularResult.self)
     }
     
    

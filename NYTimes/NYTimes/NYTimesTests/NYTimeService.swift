@@ -30,6 +30,11 @@ class NYTimeService: XCTestCase {
                 if response.statusCode == 200 {
                     XCTAssert(true)
                 }
+                
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                let _ = try? decoder.decode(PopularResult.self, from: response.data)
+                XCTAssert(true)
                
             } else {
                 XCTAssert(false)

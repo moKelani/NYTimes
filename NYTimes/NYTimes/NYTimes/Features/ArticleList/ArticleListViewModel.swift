@@ -56,7 +56,7 @@ class ArticleListViewModel {
             return
         }
         let networkManager: NYNetworkManager = NYNetworkManager()
-        let observable = networkManager.provider.rx.request(.popular(days: 7)).map(PopularResult.self, using: JSONDecoder(), failsOnEmptyData: true).asObservable()
+        let observable = networkManager.getPopularArticleList().asObservable()
         isLoading.accept(true)
         _ = observable.subscribe(onNext: { [weak self] response in
             self?.isLoading.accept(false)
