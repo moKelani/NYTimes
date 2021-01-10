@@ -7,7 +7,6 @@ target 'NYTimes' do
 
   # Pods for NYTimes
   pod 'Moya/RxSwift', '~> 14.0'
-  pod 'RxSwift', '5.0.0'
   pod 'RxCocoa', '5.0.0'
   pod 'SwiftLint', '0.42.0'
   pod 'Kingfisher', '~> 6.0'
