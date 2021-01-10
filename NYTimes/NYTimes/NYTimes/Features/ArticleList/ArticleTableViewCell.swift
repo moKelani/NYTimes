@@ -15,7 +15,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
     private var bag: DisposeBag = DisposeBag()
 
     // MARK: - UIControls
-    lazy var coverImageView: UIImageView = {
+    private lazy var coverImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -25,7 +25,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         return imageView
     }()
 
-    lazy var titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textColor = .white
@@ -35,7 +35,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         return label
     }()
 
-    lazy var publishedDateLabel: UILabel = {
+    private lazy var publishedDateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = .white
@@ -44,14 +44,14 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         return label
     }()
 
-    lazy var baseInfoView: UIView = {
+    private lazy var baseInfoView: UIView = {
            let view = UIView()
         view.backgroundColor = UIColor(red: 53/255, green: 53/255, blue: 53/255, alpha: 1.0)
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
        }()
 
-    lazy var articleView: UIView = {
+    private lazy var articleView: UIView = {
            let view = UIView()
         view.backgroundColor = .clear
         view.layer.cornerRadius = 8
@@ -107,7 +107,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
     }
 
     // MARK: - AutoLayout
-    func setConstraints() {
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             articleView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             articleView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
@@ -122,7 +122,6 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
             coverImageView.trailingAnchor.constraint(equalTo: articleView.trailingAnchor),
             coverImageView.bottomAnchor.constraint(equalTo: articleView.bottomAnchor),
             //title
-            //baseInfoView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             baseInfoView.leadingAnchor.constraint(equalTo: articleView.leadingAnchor),
             baseInfoView.trailingAnchor.constraint(equalTo: articleView.trailingAnchor),
             baseInfoView.bottomAnchor.constraint(equalTo: articleView.bottomAnchor),
@@ -132,11 +131,9 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
             titleLabel.bottomAnchor.constraint(equalTo: publishedDateLabel.topAnchor, constant: -4),
 
             publishedDateLabel.leadingAnchor.constraint(equalTo: baseInfoView.leadingAnchor, constant: 8),
-
             publishedDateLabel.bottomAnchor.constraint(equalTo: baseInfoView.bottomAnchor, constant: -8),
             publishedDateLabel.trailingAnchor.constraint(equalTo: baseInfoView.trailingAnchor, constant: -8),
             coverImageView.heightAnchor.constraint(equalToConstant: 140)
-
         ])
     }
 

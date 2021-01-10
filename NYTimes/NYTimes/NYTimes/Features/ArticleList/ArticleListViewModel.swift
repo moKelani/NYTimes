@@ -20,9 +20,6 @@ class ArticleListViewModel {
     private let alertMessage = PublishSubject<AlertMessage>()
 
     // output
-
-    // internal
-
     var onLoading: Observable<Bool> {
         isLoading.asObservable()
             .distinctUntilChanged()
@@ -30,20 +27,16 @@ class ArticleListViewModel {
 
     var onAlertMessage: Observable<AlertMessage> {
         alertMessage.asObservable()
-
     }
 
-    public var dataSourceDriver: Driver<[ArticleCellViewModel]> {
+    var dataSourceDriver: Driver<[ArticleCellViewModel]> {
         return articleDataSource.asDriver().skip(1)
     }
-    public var dataSource: [ArticleCellViewModel] {
+    var dataSource: [ArticleCellViewModel] {
         return articleDataSource.value
     }
-
-    init() {
-       setupRx()
-    }
-
+    
+    // internal
     func fetchArticles() {
         guard  !Reachability.shared.isConnected else {
             alertMessage.onNext(AlertMessage(title: "No Internet Connection", message: "You aren't connected to internet"))
@@ -65,8 +58,3 @@ class ArticleListViewModel {
 
 }
 
-// MARK: Setup
-private extension ArticleListViewModel {
-    func setupRx() {
-    }
-}

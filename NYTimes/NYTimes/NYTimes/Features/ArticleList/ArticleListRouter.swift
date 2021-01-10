@@ -15,7 +15,6 @@ class ArticleListRouter {
         if let splitVieController =  viewController?.splitViewController, let detailViewController = ArticleDetailsBuilder.viewController() as? ArticleDetailsViewController {
             detailViewController.viewModel = viewModel
             splitVieController.showDetailViewController(detailViewController, sender: viewController)
-
         }
     }
 }

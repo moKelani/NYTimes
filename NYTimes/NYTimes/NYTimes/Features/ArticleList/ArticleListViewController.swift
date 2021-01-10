@@ -18,7 +18,7 @@ class ArticleListViewController: UIViewController {
     fileprivate let disposeBag = DisposeBag()
 
     // MARK: - UIControls
-    lazy var tableView: UITableView = {
+    private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.backgroundColor = .white
         tableView.separatorStyle = .none
@@ -68,19 +68,19 @@ private extension ArticleListViewController {
     }
 
     func setupRx() {
+        //fetch articles
         viewModel.fetchArticles()
+        //reload table from datasource
         viewModel.dataSourceDriver.drive(onNext: { [weak self] _ in
             guard let `self` = self else { return }
             self.tableView.reloadData()
         }).disposed(by: disposeBag)
-
+        //loading
         viewModel.onLoading
             .map { [weak self] isLoading in
-
                 guard let self = self else {
                     return
                 }
-
                 if isLoading {
                     self.view.startActivityIndicator()
                 } else {
@@ -89,9 +89,8 @@ private extension ArticleListViewController {
             }
             .subscribe()
             .disposed(by: disposeBag)
-
+        //alert message
         viewModel.onAlertMessage.map {  [weak self] alert in
-
             guard let self = self else {
                 return
             }

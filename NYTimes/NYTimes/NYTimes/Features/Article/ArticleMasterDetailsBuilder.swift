@@ -12,10 +12,8 @@ struct ArticleMasterDetailsBuilder {
 
     static func viewController() -> UIViewController {
         let articleMDViewController = ArticleMasterDetailsViewController()
-
         let masterController = ArticleListBuilder.viewController()
         let navigationMaster = UINavigationController(rootViewController: masterController)
-
         let detailController = ArticleDetailsBuilder.viewController()
         let navigationDetail = UINavigationController(rootViewController: detailController)
         articleMDViewController.viewControllers = [navigationMaster, navigationDetail]

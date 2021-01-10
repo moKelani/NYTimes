@@ -12,7 +12,7 @@ struct ArticleDetailsBuilder {
 
     static func viewController() -> UIViewController {
         let viewController = ArticleDetailsViewController()
-
+        
         return viewController
     }
 }

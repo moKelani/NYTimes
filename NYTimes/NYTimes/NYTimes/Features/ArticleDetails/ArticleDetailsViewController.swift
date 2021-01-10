@@ -17,7 +17,7 @@ class ArticleDetailsViewController: UIViewController {
     private var disposeBag = DisposeBag()
 
     // MARK: - UIControls
-    lazy var coverImageView: UIImageView = {
+    private lazy var coverImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -27,7 +27,7 @@ class ArticleDetailsViewController: UIViewController {
         return imageView
     }()
 
-    lazy var titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .white
@@ -37,7 +37,7 @@ class ArticleDetailsViewController: UIViewController {
         return label
     }()
 
-    lazy var publishedDateLabel: UILabel = {
+    private lazy var publishedDateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .white
@@ -46,14 +46,14 @@ class ArticleDetailsViewController: UIViewController {
         return label
     }()
 
-    lazy var baseInfoView: UIView = {
+    private lazy var baseInfoView: UIView = {
            let view = UIView()
         view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
        }()
 
-    lazy var placeHolder: EmptyPlaceHolderView = {
+    private lazy var placeHolder: EmptyPlaceHolderView = {
         let view = EmptyPlaceHolderView(frame: .zero)
         view.backgroundColor = .clear
         view.clipsToBounds = true
@@ -122,7 +122,6 @@ private extension ArticleDetailsViewController {
     }
 
     func setupRx(comingViewModel: ArticleCellViewModel) {
-
         comingViewModel.articleCover.drive(onNext: { [weak self] url in
             guard let `self` = self, let url = url else { return }
             self.coverImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholder"))

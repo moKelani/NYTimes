@@ -21,24 +21,24 @@ class ArticleCellViewModel {
 
 extension ArticleCellViewModel {
 
-    public var articleDriver: Driver<Article> {
+    var articleDriver: Driver<Article> {
         return article.asDriver()
     }
 
-    public var articleCover: Driver<URL?> {
+    var articleCover: Driver<URL?> {
         return articleDriver.map {
             guard let str = $0.media?.first?.metadata?[1].url else { return nil }
             return URL(string: str) ?? nil
             }.asDriver()
     }
 
-    public var articleTitle: Driver<String> {
+    var articleTitle: Driver<String> {
         return articleDriver.map {
             return ($0.title ?? "")
         }.asDriver()
     }
 
-    public var articlePublishDate: Driver<String> {
+    var articlePublishDate: Driver<String> {
         return articleDriver.map {
             return "\($0.publishedDate ?? "")"
         }.asDriver()
