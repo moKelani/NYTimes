@@ -3,7 +3,7 @@
 //  NYTimes
 //
 //  Created by Mohamed Kelany on 09/01/2021.
-//  Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) 2021 com.kelany. All rights reserved.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class ArticleListViewController: UIViewController {
     
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.backgroundColor = .clear
+        tableView.backgroundColor = .white
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
@@ -49,7 +49,9 @@ class ArticleListViewController: UIViewController {
 private extension ArticleListViewController {
 
     func setupViews() {
-        view.backgroundColor = .systemBackground
+        title = "NY Times"
+        showDefaultNavigationBar()
+        view.backgroundColor = .white
         view.addSubview(tableView)
     }
 
@@ -115,6 +117,6 @@ extension ArticleListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        router.gotoArticleDetails()
+        router.gotoArticleDetails(viewModel: viewModel.dataSource[indexPath.row])
     }
 }

@@ -49,7 +49,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
     
     private var articleView: UIView = {
            let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         view.layer.cornerRadius = 8
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -62,7 +62,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
         backgroundColor = .systemGray
-        contentView.backgroundColor = UIColor.clear
+        contentView.backgroundColor = UIColor.white
         setUpUI()
     }
     
@@ -101,25 +101,9 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         contentView.addSubview(articleView)
         setConstraints()
     }
-    
-    func setupShadow() {
-        baseInfoView.layer.cornerRadius = 8
-        let shadowPath = UIBezierPath(roundedRect: baseInfoView.bounds, cornerRadius: 8)
-        baseInfoView.layer.masksToBounds = false
-        baseInfoView.layer.shadowColor = UIColor.black.cgColor
-        baseInfoView.layer.shadowOffset = CGSize(width: 0.5, height: 1)
-        baseInfoView.layer.shadowOpacity = 0.25
-        baseInfoView.layer.shadowPath = shadowPath.cgPath
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        setupShadow()
-    }
-    
+
 
     func setConstraints() {
-        //contentView.addSubview(baseInfoStackView)
         NSLayoutConstraint.activate([
             articleView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             articleView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),

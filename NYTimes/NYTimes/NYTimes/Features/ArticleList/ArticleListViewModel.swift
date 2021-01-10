@@ -3,7 +3,7 @@
 //  NYTimes
 //
 //  Created by Mohamed Kelany on 09/01/2021.
-//  Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) 2021 com.kelany. All rights reserved.
 //
 
 import RxSwift
@@ -50,7 +50,7 @@ class ArticleListViewModel {
     }
     
     
-    func requestData() {
+    func fetchArticles() {
         guard  !Reachability.shared.isConnected else {
             alertMessage.onNext(AlertMessage(title: "No Internet Connection", message: "You aren't connected to internet"))
             return

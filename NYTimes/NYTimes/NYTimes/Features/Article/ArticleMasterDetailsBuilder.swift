@@ -3,7 +3,7 @@
 //  NYTimes
 //
 //  Created by Mohamed Kelany on 09/01/2021.
-//  Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) 2021 com.kelany. All rights reserved.
 //
 
 import UIKit
@@ -11,10 +11,7 @@ import UIKit
 struct ArticleMasterDetailsBuilder {
 
     static func viewController() -> UIViewController {
-        let viewModel = ArticleMasterDetailsViewModel()
-        let router = ArticleMasterDetailsRouter()
-        let articleMDViewController = ArticleMasterDetailsViewController(withViewModel: viewModel, router: router)
-        router.viewController = articleMDViewController
+        let articleMDViewController = ArticleMasterDetailsViewController()
         
         let masterController = ArticleListBuilder.viewController()
         let navigationMaster = UINavigationController(rootViewController: masterController)

@@ -3,7 +3,7 @@
 //  NYTimes
 //
 //  Created by Mohamed Kelany on 09/01/2021.
-//  Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) 2021 com.kelany. All rights reserved.
 //
 
 import UIKit

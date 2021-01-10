@@ -19,7 +19,7 @@ DEPENDENCIES:
   - Moya/RxSwift (~> 14.0)
   - RxCocoa (= 5.0.0)
   - RxSwift (= 5.0.0)
-  - SwiftLint
+  - SwiftLint (= 0.42.0)
 
 SPEC REPOS:
   trunk:
@@ -40,6 +40,6 @@ SPEC CHECKSUMS:
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
 
-PODFILE CHECKSUM: 154fa79ff6c1a093bb834831acb69cf48fab49a5
+PODFILE CHECKSUM: ec341346d5c1073f1cc5c455160d9674e9e7892a
 
 COCOAPODS: 1.9.1
