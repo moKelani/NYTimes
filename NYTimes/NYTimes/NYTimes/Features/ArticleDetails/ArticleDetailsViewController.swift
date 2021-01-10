@@ -9,12 +9,14 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Network
 
 class ArticleDetailsViewController: UIViewController {
     fileprivate let viewModel: ArticleDetailsViewModel
     fileprivate let router: ArticleDetailsRouter
     fileprivate let disposeBag = DisposeBag()
 
+    
     init(withViewModel viewModel: ArticleDetailsViewModel, router: ArticleDetailsRouter) {
         self.viewModel = viewModel
         self.router = router
@@ -50,3 +52,4 @@ private extension ArticleDetailsViewController {
     
     }
 }
+

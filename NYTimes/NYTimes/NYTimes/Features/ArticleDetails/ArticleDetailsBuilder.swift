@@ -15,6 +15,7 @@ struct ArticleDetailsBuilder {
         let router = ArticleDetailsRouter()
         let viewController = ArticleDetailsViewController(withViewModel: viewModel, router: router)
         router.viewController = viewController
+       // viewController.
 
         return viewController
     }

@@ -7,14 +7,18 @@
 //
 
 import RxSwift
-
+import Moya
 class ArticleDetailsViewModel {
 
     // input
-
+    private let article = PublishSubject<Article>()
     // output
 
     // internal
+    
+    var onComingArticle: Observable<Article> {
+        article.asObservable()
+    }
 
     init() {
         setupRx()
@@ -27,4 +31,6 @@ private extension ArticleDetailsViewModel {
     func setupRx() {
 
     }
+    
+   
 }

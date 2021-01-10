@@ -11,7 +11,10 @@ import Foundation
 class ArticleListRouter {
     weak var viewController: ArticleListViewController?
 
-    func navigateToSomewhere() {
-        
+    func gotoArticleDetails() {
+        if let splitVieController =  viewController?.splitViewController, let detailViewController = splitVieController.viewControllers[1] as? ArticleDetailsViewController {
+           // ArticleDetailsBuilder.viewController(article: viewController.viewmode)
+           // detailVC.name?.text = list[indexPath.row].name + " (\(list[indexPath.row].code))"
+        }
     }
 }

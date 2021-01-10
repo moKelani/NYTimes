@@ -14,6 +14,8 @@ class ArticleMasterDetailsViewController: UISplitViewController, UISplitViewCont
     fileprivate let viewModel: ArticleMasterDetailsViewModel
     fileprivate let router: ArticleMasterDetailsRouter
     fileprivate let disposeBag = DisposeBag()
+    
+   // private var reachability: Reachability?
 
     init(withViewModel viewModel: ArticleMasterDetailsViewModel, router: ArticleMasterDetailsRouter) {
         self.viewModel = viewModel
@@ -32,11 +34,13 @@ class ArticleMasterDetailsViewController: UISplitViewController, UISplitViewCont
         setupLayout()
         setupRx()
     }
+
     
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
             // Return true to prevent UIKit from applying its default behavior
             return true
         }
+    
 }
 
 // MARK: Setup
