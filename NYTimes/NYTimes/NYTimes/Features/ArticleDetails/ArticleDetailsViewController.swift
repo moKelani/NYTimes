@@ -13,7 +13,7 @@ import RxCocoa
 class ArticleDetailsViewController: UIViewController {
 
     // MARK: - Properties
-    internal var viewModel: ArticleCellViewModel!
+    var viewModel: ArticleCellViewModel!
     private var disposeBag = DisposeBag()
 
     // MARK: - UIControls
@@ -62,13 +62,7 @@ class ArticleDetailsViewController: UIViewController {
        }()
 
     // MARK: - Intializers
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    
 
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
