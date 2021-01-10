@@ -11,11 +11,12 @@ import RxSwift
 import RxCocoa
 
 class ArticleDetailsViewController: UIViewController {
-    internal var viewModel: ArticleCellViewModel!
     
+    // MARK: - Properties
+    internal var viewModel: ArticleCellViewModel!
+    private var disposeBag = DisposeBag()
 
-    fileprivate let disposeBag = DisposeBag()
-
+    // MARK: - UIControls
     lazy var coverImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -26,7 +27,7 @@ class ArticleDetailsViewController: UIViewController {
         return imageView
     }()
     
-    let titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .white
@@ -36,7 +37,7 @@ class ArticleDetailsViewController: UIViewController {
         return label
     }()
     
-    let publishedDateLabel: UILabel = {
+    lazy var publishedDateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .white
@@ -45,14 +46,14 @@ class ArticleDetailsViewController: UIViewController {
         return label
     }()
     
-    private var baseInfoView: UIView = {
+    lazy var baseInfoView: UIView = {
            let view = UIView()
         view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
        }()
     
-    private var placeHolder: EmptyPlaceHolderView = {
+    lazy var placeHolder: EmptyPlaceHolderView = {
         let view = EmptyPlaceHolderView(frame: .zero)
         view.backgroundColor = .clear
         view.clipsToBounds = true
@@ -60,8 +61,7 @@ class ArticleDetailsViewController: UIViewController {
            return view
        }()
 
-    private var bag: DisposeBag = DisposeBag()
-    
+    // MARK: - Intializers
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -70,6 +70,7 @@ class ArticleDetailsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -101,6 +102,7 @@ private extension ArticleDetailsViewController {
         }
     }
 
+    // MARK: - AutoLayout
     func setupLayout() {
         let margins = view.layoutMarginsGuide
         NSLayoutConstraint.activate([
@@ -132,9 +134,9 @@ private extension ArticleDetailsViewController {
             guard let `self` = self, let url = url else { return }
             self.coverImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholder"))
             self.coverImageView.layer.cornerRadius = 10
-        }).disposed(by: bag)
-        comingViewModel.articleTitle.drive(titleLabel.rx.text).disposed(by: bag)
-        comingViewModel.articlePublishDate.drive(publishedDateLabel.rx.text).disposed(by: bag)
+        }).disposed(by: disposeBag)
+        comingViewModel.articleTitle.drive(titleLabel.rx.text).disposed(by: disposeBag)
+        comingViewModel.articlePublishDate.drive(publishedDateLabel.rx.text).disposed(by: disposeBag)
     }
     
     func setupPlaceHolder() {

@@ -11,6 +11,10 @@ import Kingfisher
 
 class ArticleTableViewCell: UITableViewCell, CellReusable {
 
+    // MARK: - Properties
+    private var bag: DisposeBag = DisposeBag()
+    
+    // MARK: - UIControls
     lazy var coverImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -21,7 +25,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         return imageView
     }()
     
-    let titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textColor = .white
@@ -31,7 +35,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         return label
     }()
     
-    let publishedDateLabel: UILabel = {
+    lazy var publishedDateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = .white
@@ -40,14 +44,14 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         return label
     }()
     
-    private var baseInfoView: UIView = {
+    lazy var baseInfoView: UIView = {
            let view = UIView()
         view.backgroundColor = UIColor(red: 53/255, green: 53/255, blue: 53/255, alpha: 1.0)
         view.translatesAutoresizingMaskIntoConstraints = false
            return view
        }()
     
-    private var articleView: UIView = {
+    lazy var articleView: UIView = {
            let view = UIView()
         view.backgroundColor = .clear
         view.layer.cornerRadius = 8
@@ -56,8 +60,8 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
            return view
        }()
 
-    private var bag: DisposeBag = DisposeBag()
-    
+   
+    // MARK: - Intializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
@@ -66,14 +70,14 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         setUpUI()
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         coverImageView.kf.cancelDownloadTask()
         coverImageView.image = nil
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     override func awakeFromNib() {
@@ -81,6 +85,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         bag = DisposeBag()
     }
     
+    // MARK: bind
     func bind(viewModel: ArticleCellViewModel) {
         viewModel.articleCover.drive(onNext: { [weak self] url in
             guard let `self` = self, let url = url else { return }
@@ -102,7 +107,7 @@ class ArticleTableViewCell: UITableViewCell, CellReusable {
         setConstraints()
     }
 
-
+    // MARK: - AutoLayout
     func setConstraints() {
         NSLayoutConstraint.activate([
             articleView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),

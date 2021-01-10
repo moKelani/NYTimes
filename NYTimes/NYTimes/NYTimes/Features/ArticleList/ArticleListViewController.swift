@@ -11,11 +11,13 @@ import RxSwift
 import RxCocoa
 
 class ArticleListViewController: UIViewController {
+    
+    // MARK: - Properties
     fileprivate var viewModel: ArticleListViewModel
     fileprivate let router: ArticleListRouter
     fileprivate let disposeBag = DisposeBag()
 
-    
+    // MARK: - UIControls
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.backgroundColor = .white
@@ -26,7 +28,7 @@ class ArticleListViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
-    
+    // MARK: - Intializers
     init(withViewModel viewModel: ArticleListViewModel, router: ArticleListRouter) {
         self.viewModel = viewModel
         self.router = router
@@ -55,6 +57,7 @@ private extension ArticleListViewController {
         view.addSubview(tableView)
     }
 
+    // MARK: - AutoLayout
     func setupLayout() {
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -97,7 +100,7 @@ private extension ArticleListViewController {
         .disposed(by: disposeBag)
     }
 }
-
+// MARK: - TableView Delegate
 extension ArticleListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
