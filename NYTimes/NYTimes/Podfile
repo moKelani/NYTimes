@@ -6,7 +6,7 @@ target 'NYTimes' do
   use_frameworks!
 
   # Pods for NYTimes
-  pod 'Moya/RxSwift', '~> 14.0'
+  pod 'Moya/RxSwift', '~> 14.0'   
   pod 'RxCocoa', '5.0.0'
   pod 'SwiftLint', '0.42.0'
   pod 'Kingfisher', '~> 6.0'
