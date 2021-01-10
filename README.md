@@ -3,7 +3,7 @@
 NYTimes is open source app. It depends on retriving news articles from NYTimes.
 
 ## Screen Shots 
-![alt text]([https://raw.githubusercontent.com/moKelani/NYTimes/main/preview.png)
+![alt text](https://github.com/moKelani/NYTimes/blob/main/preview.png?raw=true)
 ## Development
 * MVVM
 * Rxswift
